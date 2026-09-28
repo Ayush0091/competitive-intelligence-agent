@@ -1,0 +1,319 @@
+{
+  "goal": "Compare NVIDIA and AMD in AI accelerators",
+  "status": "completed",
+  "data_mode": "live",
+  "planner": "llm",
+  "llm": "ollama:qwen3:8b",
+  "tasks_total": 6,
+  "tasks_completed": 5,
+  "tasks_failed": 0,
+  "tools_used": [
+    "url_fetcher",
+    "web_search"
+  ],
+  "failures": 0,
+  "recoveries": 0,
+  "sources_analyzed": 6,
+  "report": {
+    "target_company": "NVIDIA, AMD",
+    "executive_summary": "NVIDIA and AMD are both major players in the AI accelerator market, with NVIDIA focusing on a broad ecosystem and AI software solutions, while AMD is pushing forward with high-performance hardware and open standards.",
+    "competitors": [
+      {
+        "name": "NVIDIA",
+        "summary": "NVIDIA offers a wide range of AI accelerators and software solutions, including the AI Accelerated Program and the Nemotron models, emphasizing enterprise AI integration and performance.",
+        "source_ids": [
+          1,
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "AMD",
+        "summary": "AMD is challenging NVIDIA with its Instinct MI400 series, which features advanced architecture and memory capabilities, and is expanding its AI offerings with ROCm and Radeon GPUs.",
+        "source_ids": [
+          2,
+          3,
+          5
+        ],
+        "kind": "fact"
+      }
+    ],
+    "recent_developments": [
+      {
+        "text": "AMD launched the Instinct MI400 series, which includes the MI430X, MI440X, and MI455X, with advanced CDNA 5 architecture and HBM4 memory.",
+        "source_ids": [
+          3,
+          6
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD introduced the Helios rack-scale system, which is built around the MI400 accelerators and is designed for large-scale AI workloads.",
+        "source_ids": [
+          6
+        ],
+        "kind": "fact"
+      }
+    ],
+    "market_signals": [
+      {
+        "text": "AMD's MI400 series is projected to generate $7.2 billion in revenue in H2 2026, indicating strong market confidence in its AI accelerator capabilities.",
+        "source_ids": [
+          3
+        ],
+        "kind": "inference"
+      },
+      {
+        "text": "NVIDIA continues to dominate the AI accelerator market with its Blackwell architecture, including the B200 and B300 accelerators, which are the default choice for many data center deployments.",
+        "source_ids": [
+          3
+        ],
+        "kind": "inference"
+      }
+    ],
+    "risks": [
+      {
+        "text": "AMD faces challenges in competing with NVIDIA's established ecosystem and proprietary technologies like NVLink.",
+        "source_ids": [
+          3
+        ],
+        "kind": "inference"
+      },
+      {
+        "text": "NVIDIA's dominance in the AI accelerator market may be threatened by AMD's advancements in hardware and open standards.",
+        "source_ids": [
+          3
+        ],
+        "kind": "inference"
+      }
+    ],
+    "synthesis_method": "llm (ollama:qwen3:8b); citations enforced"
+  },
+  "metrics": [],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.nvidia.com/en-in/ai-data-science/ai-accelerated/",
+      "title": "NVIDIA AI Accelerated Program | NVIDIA",
+      "snippet": "NVIDIA AI Accelerated is the premier ecosystem that showcases world-class AI applications accelerated by NVIDIA AI . Customers are invited to explore validated products from a catalog of diverse software solutions. And software and solution partners can leverage the NVIDIA AI platform and tools to build and validate their innovative AI solutions.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 2,
+      "url": "https://www.amd.com/en/products.html",
+      "title": "AMD Products: Processors, Graphics, AI Accelerators and Adaptive Computing",
+      "snippet": "AMD Products Explore AMD processors, Radeon graphics, EPYC server CPUs, Instinct AI accelerators , adaptive computing platforms, and developer software.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 3,
+      "url": "https://tech-insider.org/amd-mi400-series-ai-gpu-data-center-2026/",
+      "title": "AMD MI400 Series: $7.2B AI GPU Challenging Nvidia [2026]",
+      "snippet": "AMD MI400 series specs, benchmarks, and revenue projections. 432 GB HBM4, 320B transistors, and the Helios platform targeting Nvidia Blackwell in 2026 .",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 4,
+      "url": "https://www.nvidia.com/en-us/solutions/ai/",
+      "title": "AI Solutions for Enterprises | NVIDIA",
+      "snippet": "Transform any enterprise into an AI organization with full-stack innovation across accelerated infrastructure, enterprise-grade software, and AI models. By accelerating the entire AI workflow, projects reach production faster, with higher accuracy, efficiency, and infrastructure performance at a lower overall cost for various solutions and applications.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 5,
+      "url": "https://www.amd.com/en/products/graphics/radeon-ai.html",
+      "title": "AI Acceleration with AMD Radeon\u2122 Graphics Cards",
+      "snippet": "AI Accelerators AMD RDNA\u2122 4 architecture delivers over 4X more AI compute than the previous generation AMD RDNA 3 architecture. Featuring 2 AI Accelerators per compute unit, support for new data types, and Sparsity - Radeon 9000 Series Graphics cards deliver up to 1557 TOPs of performance.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 6,
+      "url": "https://tech-insider.org/amd-advancing-ai-2026/",
+      "title": "AMD Advancing AI 2026: Helios Rack Hits $5.25M",
+      "snippet": "AMD unveiled Helios AI racks and MI400 GPUs at Advancing AI 2026 , with $5.25M pricing, 12GW in OpenAI and Meta orders, and stock near $553.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Identify NVIDIA's AI accelerator offerings",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 2,
+      "description": "Identify AMD's AI accelerator offerings",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 3,
+      "description": "Find recent news on NVIDIA and AMD in AI accelerators",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 4,
+      "description": "Read the most relevant sources",
+      "tool": "url_fetcher",
+      "status": "completed",
+      "note": "6 full pages, 0 snippet fallbacks, 0 skipped"
+    },
+    {
+      "id": 5,
+      "description": "Compute comparable metrics",
+      "tool": "calculator",
+      "status": "skipped",
+      "note": "all 6 proposed metric(s) failed validation (nothing computed)"
+    },
+    {
+      "id": 6,
+      "description": "Write the competitive brief",
+      "tool": "synthesize",
+      "status": "completed",
+      "note": "llm: 2 competitors, 2 developments, 2 signals, 2 risks"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD MI400 Series Revenue Projection': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD Helios Rack System Revenue': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD MI400 Series Memory Capacity': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD Radeon RX 9000 Series AI Performance': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD Radeon RX 9000 Series Video Memory': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'AMD MI400 Series FP4 Performance': not a calculation (a single copied number)",
+      "tool": "calculator"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AI accelerators products\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 892.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerators products\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 649.7,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AMD AI accelerators news 2026\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 648.6,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.nvidia.com/en-in/ai-data-science/ai-accelerated/\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 480.1,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.amd.com/en/products.html\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 238.9,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://tech-insider.org/amd-mi400-series-ai-gpu-data-center-2026/\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 754.3,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.nvidia.com/en-us/solutions/ai/\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 140.0,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.amd.com/en/products/graphics/radeon-ai.html\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 516.7,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://tech-insider.org/amd-advancing-ai-2026/\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 541.0,
+      "error": null,
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-27T14:53:21",
+  "duration_s": 387.4
+}

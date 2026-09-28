@@ -1,0 +1,162 @@
+{"ts": "2026-09-28T05:52:38.184+00:00", "tag": "AGENT", "message": "Goal received: \"Compare Voltaic Semiconductors and Nimbus Compute in AI accelerators\""}
+{"ts": "2026-09-28T05:52:38.184+00:00", "tag": "AGENT", "message": "mode=offline_synthetic | llm=none | search=web_search[synthetic]"}
+{"ts": "2026-09-28T05:52:38.184+00:00", "tag": "FAULT", "message": "Deliberate failure armed: url_fetcher -> 'timeout' for the next 99 call(s) (validator is not told)"}
+{"ts": "2026-09-28T05:52:38.184+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-28T05:52:38.184+00:00", "tag": "TASK 1", "message": "Find head-to-head comparisons of Voltaic Semiconductors and Nimbus Compute", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.187+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Voltaic Semiconductors vs Nimbus Compute AI accelerators\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "VALIDATION", "message": "passed in 1 ms", "task_id": 1, "tool": "web_search", "duration_ms": 1.0}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 1, "results": 5}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3 | https://synthetic.example/voltaic-vs-nimbus-benchmarks", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic Semiconductors posts record data-center revenue | https://synthetic.example/voltaic-fy2025-results", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 1}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "TASK 2", "message": "Research recent developments for Voltaic Semiconductors", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.188+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Voltaic Semiconductors AI accelerators recent developments\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "VALIDATION", "message": "passed in 1 ms", "task_id": 2, "tool": "web_search", "duration_ms": 0.6}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 2, "results": 5}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic announces sovereign AI data-center partnership with Orbital  | https://synthetic.example/voltaic-orbital-partnership", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic Semiconductors posts record data-center revenue | https://synthetic.example/voltaic-fy2025-results", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 2}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "TASK 3", "message": "Research recent developments for Nimbus Compute", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.189+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Nimbus Compute AI accelerators recent developments\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 3, "tool": "web_search", "duration_ms": 0.4}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 3, "results": 5}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Advanced packaging shortage squeezes accelerator supply | https://synthetic.example/advanced-packaging-shortage", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3 | https://synthetic.example/voltaic-vs-nimbus-benchmarks", "task_id": 3}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "TASK 4", "message": "Retrieve and read the most relevant public sources", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/nimbus-mx3-launch\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.1, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/nimbus-mx3-launch\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.190+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S1 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/ai-accelerator-market-overview\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/ai-accelerator-market-overview\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S2 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-orbital-partnership\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-orbital-partnership\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S3 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S4 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-fy2025-results\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.191+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-fy2025-results\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S5 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 0 full pages, 5 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "TASK 5", "message": "Compute comparable metrics from figures stated in sources", "task_id": 5}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "TOOL", "message": "calculator expression=\"(18.4 - 10.2) / 10.2 * 100\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "RESULT", "message": "Voltaic Semiconductors: revenue growth vs prior period = 80.39%", "task_id": 5}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "TASK 5", "message": "COMPLETED - 1/1 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "TASK 6", "message": "Synthesize validated evidence into the final report", "task_id": 6}
+{"ts": "2026-09-28T05:52:38.192+00:00", "tag": "RESULT", "message": "heuristic competitor candidates: none", "task_id": 6}
+{"ts": "2026-09-28T05:52:38.193+00:00", "tag": "TASK 6", "message": "COMPLETED - extractive: 1 competitors, 2 developments, 2 signals, 0 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-28T05:52:38.193+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=14 | failures=10 | recoveries=5 | sources=5"}
+{"ts": "2026-09-28T05:52:38.197+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\evaluation\\traces\\G2-url_fetcher-timeout-persistent\\report.json, E:\\Assignment\\competitive-intelligence-agent\\evaluation\\traces\\G2-url_fetcher-timeout-persistent\\report.md"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "AGENT", "message": "Goal received: \"Compare Voltaic Semiconductors and Nimbus Compute in AI accelerators\""}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "AGENT", "message": "mode=offline_synthetic | llm=none | search=web_search[synthetic]"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "FAULT", "message": "Deliberate failure armed: url_fetcher -> 'timeout' for the next 99 call(s) (validator is not told)"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 1", "message": "Find head-to-head comparisons of Voltaic Semiconductors and Nimbus Compute", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Voltaic Semiconductors vs Nimbus Compute AI accelerators\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 1, "tool": "web_search", "duration_ms": 0.4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 1, "results": 5}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3 | https://synthetic.example/voltaic-vs-nimbus-benchmarks", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic Semiconductors posts record data-center revenue | https://synthetic.example/voltaic-fy2025-results", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 2", "message": "Research recent developments for Voltaic Semiconductors", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Voltaic Semiconductors AI accelerators recent developments\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 2, "tool": "web_search", "duration_ms": 0.4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 2, "results": 5}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic announces sovereign AI data-center partnership with Orbital  | https://synthetic.example/voltaic-orbital-partnership", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic Semiconductors posts record data-center revenue | https://synthetic.example/voltaic-fy2025-results", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 2}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 3", "message": "Research recent developments for Nimbus Compute", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "web_search[synthetic] query=\"Nimbus Compute AI accelerators recent developments\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 3, "tool": "web_search", "duration_ms": 0.3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "5 valid results (provider=synthetic)", "task_id": 3, "results": 5}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic | https://synthetic.example/nimbus-mx3-launch", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in | https://synthetic.example/ai-accelerator-market-overview", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Advanced packaging shortage squeezes accelerator supply | https://synthetic.example/advanced-packaging-shortage", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] New export rules restrict advanced accelerator shipments | https://synthetic.example/accelerator-export-rules", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "  - [SYNTHETIC] Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3 | https://synthetic.example/voltaic-vs-nimbus-benchmarks", "task_id": 3}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 4", "message": "Retrieve and read the most relevant public sources", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/nimbus-mx3-launch\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/nimbus-mx3-launch\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S1 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/ai-accelerator-market-overview\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/ai-accelerator-market-overview\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S2 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-orbital-partnership\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-orbital-partnership\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S3 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S4 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-fy2025-results\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://synthetic.example/voltaic-fy2025-results\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S5 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 0 full pages, 5 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 5", "message": "Compute comparable metrics from figures stated in sources", "task_id": 5}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TOOL", "message": "calculator expression=\"(18.4 - 10.2) / 10.2 * 100\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "Voltaic Semiconductors: revenue growth vs prior period = 80.39%", "task_id": 5}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 5", "message": "COMPLETED - 1/1 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 6", "message": "Synthesize validated evidence into the final report", "task_id": 6}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "heuristic competitor candidates: none", "task_id": 6}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "TASK 6", "message": "COMPLETED - extractive: 1 competitors, 2 developments, 2 signals, 0 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-28T09:24:02.395+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=14 | failures=10 | recoveries=5 | sources=5"}
+{"ts": "2026-09-28T09:24:02.404+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\evaluation\\traces\\G2-url_fetcher-timeout-persistent\\report.json, E:\\Assignment\\competitive-intelligence-agent\\evaluation\\traces\\G2-url_fetcher-timeout-persistent\\report.md"}

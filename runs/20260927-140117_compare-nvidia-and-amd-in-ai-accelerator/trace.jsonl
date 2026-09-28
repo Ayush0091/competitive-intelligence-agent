@@ -1,0 +1,77 @@
+{"ts": "2026-09-27T08:31:19.931+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T08:31:20.331+00:00", "tag": "AGENT", "message": "Goal received: \"Compare NVIDIA and AMD in AI accelerators\""}
+{"ts": "2026-09-27T08:31:20.331+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[wikipedia]"}
+{"ts": "2026-09-27T08:33:16.929+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 116.6s (1586 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T08:33:16.931+00:00", "tag": "PLAN", "message": "7 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T08:33:16.931+00:00", "tag": "TASK 1", "message": "Identify NVIDIA's AI accelerator offerings", "task_id": 1}
+{"ts": "2026-09-27T08:33:16.932+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA AI accelerators products\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:17.248+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 315.8, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:17.249+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:17.249+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"NVIDIA accelerators products\"", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:17.249+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA accelerators products\" (attempt 2)", "task_id": 1, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:33:17.349+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 99.0, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:17.349+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:17.349+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 1}
+{"ts": "2026-09-27T08:33:28.105+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 10.8s (223 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:33:28.105+00:00", "tag": "REPLAN", "message": "New query \"NVIDIA AI hardware solutions\" - Broadening the search to include terms like 'hardware solutions' may bypass restrictions and provide more comprehensive results about NVIDIA's AI accelerator offerings.", "task_id": 1}
+{"ts": "2026-09-27T08:33:28.106+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA AI hardware solutions\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:28.398+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 291.9, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:28.399+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:28.399+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:28.400+00:00", "tag": "TASK 1", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 1, "status": "failed"}
+{"ts": "2026-09-27T08:33:28.400+00:00", "tag": "TASK 2", "message": "Identify AMD's AI accelerator offerings", "task_id": 2}
+{"ts": "2026-09-27T08:33:28.400+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerators products\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:28.489+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 89.9, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:28.492+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:28.492+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"NVIDIA accelerators products\"", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:28.492+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA accelerators products\" (attempt 2)", "task_id": 2, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:33:28.578+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 87.2, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:28.578+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:28.578+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 2}
+{"ts": "2026-09-27T08:33:36.996+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 8.4s (159 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:33:36.996+00:00", "tag": "REPLAN", "message": "New query \"AMD AI accelerator solutions\" - Broader phrasing to avoid potential access restrictions and focus on solutions rather than just products", "task_id": 2}
+{"ts": "2026-09-27T08:33:36.996+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator solutions\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 315.1, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "TASK 2", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 2, "status": "failed"}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "TASK 3", "message": "Find recent news on NVIDIA and AMD in AI accelerators", "task_id": 3}
+{"ts": "2026-09-27T08:33:37.309+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA AMD AI accelerators news 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:37.419+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 104.9, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:37.420+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:37.421+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"NVIDIA accelerators news\"", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:37.421+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA accelerators news\" (attempt 2)", "task_id": 3, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:33:37.528+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 108.4, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:37.531+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:37.531+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 3}
+{"ts": "2026-09-27T08:33:48.899+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 11.4s (220 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:33:48.900+00:00", "tag": "REPLAN", "message": "New query \"NVIDIA AMD AI chip competition\" - Broadening the search to include terms like 'chip competition' may yield recent news articles or analyses comparing the two companies in the AI accelerator market.", "task_id": 3}
+{"ts": "2026-09-27T08:33:48.900+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA AMD AI chip competition\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:49.224+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 324.0, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:49.224+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:49.224+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:49.227+00:00", "tag": "TASK 3", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 3, "status": "failed"}
+{"ts": "2026-09-27T08:33:49.227+00:00", "tag": "TASK 4", "message": "Find market size and share data for AI accelerators", "task_id": 4}
+{"ts": "2026-09-27T08:33:49.227+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AI accelerators market share leaders\" (attempt 1)", "task_id": 4, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:49.329+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "web_search", "duration_ms": 102.4, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:49.331+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:49.331+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"NVIDIA accelerators share\"", "task_id": 4, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:49.331+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"NVIDIA accelerators share\" (attempt 2)", "task_id": 4, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:33:49.434+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "web_search", "duration_ms": 101.5, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:49.434+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:49.434+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 4}
+{"ts": "2026-09-27T08:33:59.674+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 10.2s (215 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:33:59.675+00:00", "tag": "REPLAN", "message": "New query \"AI accelerator market size and growth forecast\" - Broadening the search to include market size and growth data may bypass access restrictions and provide relevant industry reports or analyses.", "task_id": 4}
+{"ts": "2026-09-27T08:33:59.675+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AI accelerator market size and growth forecast\" (attempt 1)", "task_id": 4, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:33:59.977+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "web_search", "duration_ms": 301.8, "error_type": "http_error"}
+{"ts": "2026-09-27T08:33:59.978+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:59.978+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "web_search"}
+{"ts": "2026-09-27T08:33:59.979+00:00", "tag": "TASK 4", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 4, "status": "failed"}
+{"ts": "2026-09-27T08:33:59.979+00:00", "tag": "TASK 5", "message": "Read the most relevant sources", "task_id": 5}
+{"ts": "2026-09-27T08:33:59.979+00:00", "tag": "TASK 5", "message": "FAILED - no search results available to fetch", "task_id": 5, "status": "failed"}
+{"ts": "2026-09-27T08:33:59.979+00:00", "tag": "TASK 6", "message": "Compute comparable metrics", "task_id": 6}
+{"ts": "2026-09-27T08:33:59.979+00:00", "tag": "TASK 6", "message": "SKIPPED - no sources to extract figures from", "task_id": 6, "status": "skipped"}
+{"ts": "2026-09-27T08:33:59.980+00:00", "tag": "TASK 7", "message": "Write the competitive brief", "task_id": 7}
+{"ts": "2026-09-27T08:33:59.980+00:00", "tag": "TASK 7", "message": "FAILED - no validated sources; cannot synthesize", "task_id": 7, "status": "failed"}
+{"ts": "2026-09-27T08:33:59.980+00:00", "tag": "RESULT", "message": "status=failed | tasks 0/7 | tool calls=12 | failures=12 | recoveries=0 | sources=0"}
+{"ts": "2026-09-27T08:33:59.986+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-140117_compare-nvidia-and-amd-in-ai-accelerator\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-140117_compare-nvidia-and-amd-in-ai-accelerator\\report.md"}

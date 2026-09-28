@@ -1,0 +1,77 @@
+{"ts": "2026-09-27T08:57:55.259+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T08:57:56.053+00:00", "tag": "AGENT", "message": "Goal received: \"Compare NVIDIA and AMD in AI accelerators\""}
+{"ts": "2026-09-27T08:57:56.055+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[duckduckgo]"}
+{"ts": "2026-09-27T08:59:36.540+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 100.5s (1351 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T08:59:36.543+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T08:59:36.544+00:00", "tag": "TASK 1", "message": "Identify NVIDIA's AI accelerator offerings", "task_id": 1}
+{"ts": "2026-09-27T08:59:36.544+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"NVIDIA AI accelerators products\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:37.434+00:00", "tag": "VALIDATION", "message": "passed in 889 ms", "task_id": 1, "tool": "web_search", "duration_ms": 888.9}
+{"ts": "2026-09-27T08:59:37.435+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 1, "results": 5}
+{"ts": "2026-09-27T08:59:37.435+00:00", "tag": "RESULT", "message": "  - NVIDIA AI Accelerated Program | NVIDIA | https://www.nvidia.com/en-in/ai-data-science/ai-accelerated/", "task_id": 1}
+{"ts": "2026-09-27T08:59:37.435+00:00", "tag": "RESULT", "message": "  - AI Solutions for Enterprises | NVIDIA | https://www.nvidia.com/en-us/solutions/ai/", "task_id": 1}
+{"ts": "2026-09-27T08:59:37.435+00:00", "tag": "RESULT", "message": "  - Deep Learning Accelerator (DLA) - NVIDIA Developer | https://developer.nvidia.com/deep-learning-accelerator", "task_id": 1}
+{"ts": "2026-09-27T08:59:37.436+00:00", "tag": "RESULT", "message": "  - NVIDIA GPU selector - accelerators for your AI and HPC apps | https://aiserver.eu/gpu-selector/", "task_id": 1}
+{"ts": "2026-09-27T08:59:37.436+00:00", "tag": "RESULT", "message": "  - NVIDIA Groq 3 LPX Now in Full Production With World ... - NVIDIA Newsroom | https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai", "task_id": 1}
+{"ts": "2026-09-27T08:59:37.437+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-27T08:59:37.437+00:00", "tag": "TASK 2", "message": "Identify AMD's AI accelerator offerings", "task_id": 2}
+{"ts": "2026-09-27T08:59:37.437+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"AMD AI accelerators products\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:38.237+00:00", "tag": "VALIDATION", "message": "passed in 798 ms", "task_id": 2, "tool": "web_search", "duration_ms": 798.5}
+{"ts": "2026-09-27T08:59:38.238+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 2, "results": 5}
+{"ts": "2026-09-27T08:59:38.239+00:00", "tag": "RESULT", "message": "  - AMD Products: Processors, Graphics and Accelerators | https://www.amd.com/en/products.html", "task_id": 2}
+{"ts": "2026-09-27T08:59:38.239+00:00", "tag": "RESULT", "message": "  - Accelerators - AMD | https://www.amd.com/en/products/accelerators.html", "task_id": 2}
+{"ts": "2026-09-27T08:59:38.240+00:00", "tag": "RESULT", "message": "  - AMD's next-generation AI chips set to power 2026 data center growth | https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth", "task_id": 2}
+{"ts": "2026-09-27T08:59:38.240+00:00", "tag": "RESULT", "message": "  - AMD's 2026-2027 AI Roadmap: Instinct MI400 & MI500 Target ... - Wccftech | https://wccftech.com/amd-to-battle-nvidia-ai-dominance-instinct-mi400-accelerators-2026-mi500-2027/", "task_id": 2}
+{"ts": "2026-09-27T08:59:38.240+00:00", "tag": "RESULT", "message": "  - TensorWave: AI Cloud for AMD Instinct\u2122 Accelerators | https://tensorwave.com/", "task_id": 2}
+{"ts": "2026-09-27T08:59:38.241+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-27T08:59:38.241+00:00", "tag": "TASK 3", "message": "Find recent news on NVIDIA and AMD in AI accelerators", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.241+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"NVIDIA AMD AI accelerators news 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "VALIDATION", "message": "passed in 710 ms", "task_id": 3, "tool": "web_search", "duration_ms": 710.1}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 3, "results": 5}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "  - AMD MI400 Series: $7.2B AI GPU Challenging Nvidia [2026] | https://tech-insider.org/amd-mi400-series-ai-gpu-data-center-2026/", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "  - AMD's 2026-2027 AI Roadmap: Instinct MI400 & MI500 Target NVIDIA Dominance | https://wccftech.com/amd-to-battle-nvidia-ai-dominance-instinct-mi400-accelerators-2026-mi500-2027/", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "  - AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200 | https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "  - Latest AI Hardware 2026: 77 Tracked \u2014 Chips, GPUs & Accelerators | https://best-ai.news/ai-hardware-releases-2026", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "RESULT", "message": "  - Press Kit: Advancing AI 2026 - AMD Newsroom | https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/", "task_id": 3}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-27T08:59:38.947+00:00", "tag": "TASK 4", "message": "Read the most relevant sources", "task_id": 4}
+{"ts": "2026-09-27T08:59:38.957+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.nvidia.com/en-in/ai-data-science/ai-accelerated/\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:40.165+00:00", "tag": "VALIDATION", "message": "passed in 1206 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1205.7}
+{"ts": "2026-09-27T08:59:40.165+00:00", "tag": "RESULT", "message": "S1: 1394 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T08:59:40.166+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.amd.com/en/products.html\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:40.882+00:00", "tag": "VALIDATION", "message": "passed in 715 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 714.8}
+{"ts": "2026-09-27T08:59:40.883+00:00", "tag": "RESULT", "message": "S2: 2519 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T08:59:40.883+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://tech-insider.org/amd-mi400-series-ai-gpu-data-center-2026/\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:41.712+00:00", "tag": "VALIDATION", "message": "passed in 829 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 828.8}
+{"ts": "2026-09-27T08:59:41.712+00:00", "tag": "RESULT", "message": "S3: 29355 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T08:59:41.712+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.nvidia.com/en-us/solutions/ai/\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:41.889+00:00", "tag": "VALIDATION", "message": "passed in 174 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 174.4}
+{"ts": "2026-09-27T08:59:41.889+00:00", "tag": "RESULT", "message": "S4: 5477 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T08:59:41.889+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.amd.com/en/products/accelerators.html\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:42.382+00:00", "tag": "ERROR", "message": "page had too little readable text (35 chars) [empty_result]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 492.3, "error_type": "empty_result"}
+{"ts": "2026-09-27T08:59:42.383+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T08:59:42.383+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): page had too little readable text (35 chars)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T08:59:42.383+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S5 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T08:59:42.383+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://wccftech.com/amd-to-battle-nvidia-ai-dominance-instinct-mi400-accelerators-2026-mi...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 303.7, "error_type": "http_error"}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S6 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 4 full pages, 2 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T08:59:42.688+00:00", "tag": "TASK 5", "message": "Compute comparable metrics", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.306+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 81.6s (868 chars) - You extract comparable quantitative metrics for a competitiv"}
+{"ts": "2026-09-27T09:01:04.307+00:00", "tag": "VALIDATION", "message": "dropped metric 'AMD MI400 Series Revenue Projection': number 1000000000 not found in cited sources", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.308+00:00", "tag": "VALIDATION", "message": "dropped metric 'AMD MI400 FP4 Performance': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.308+00:00", "tag": "VALIDATION", "message": "dropped metric 'AMD MI400 Memory Capacity': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.308+00:00", "tag": "VALIDATION", "message": "dropped metric 'AMD MI400 Transistor Count': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.308+00:00", "tag": "TOOL", "message": "calculator expression=\"40 - 40\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:01:04.309+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T09:01:04.309+00:00", "tag": "RESULT", "message": "AMD MI400 vs. NVIDIA Blackwell Performance Gap = 0.00PFLOPS", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.309+00:00", "tag": "TOOL", "message": "calculator expression=\"432 - 432\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:01:04.310+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T09:01:04.310+00:00", "tag": "RESULT", "message": "AMD MI400 Memory Bandwidth Advantage = 0.00GB", "task_id": 5}
+{"ts": "2026-09-27T09:01:04.310+00:00", "tag": "TASK 5", "message": "COMPLETED - 2/2 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-27T09:01:04.310+00:00", "tag": "TASK 6", "message": "Write the competitive brief", "task_id": 6}
+{"ts": "2026-09-27T09:03:19.356+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 135.0s (1783 chars) - You are the reporting module of a competitive-intelligence a"}
+{"ts": "2026-09-27T09:03:19.356+00:00", "tag": "TASK 6", "message": "COMPLETED - llm: 2 competitors, 2 developments, 2 signals, 2 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-27T09:03:19.356+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=11 | failures=2 | recoveries=2 | sources=6"}
+{"ts": "2026-09-27T09:03:19.361+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-142752_compare-nvidia-and-amd-in-ai-accelerator\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-142752_compare-nvidia-and-amd-in-ai-accelerator\\report.md"}

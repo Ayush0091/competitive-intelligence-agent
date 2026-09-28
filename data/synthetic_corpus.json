@@ -1,0 +1,115 @@
+{
+  "_notice": "SYNTHETIC OFFLINE TEST CORPUS. Every company, product, figure and organisation below is fictional. It exists only so the agent can be tested end-to-end without network access or API keys. Never cite it as real information.",
+  "base_url": "https://synthetic.example/",
+  "documents": [
+    {
+      "slug": "voltaic-fy2025-results",
+      "title": "Voltaic Semiconductors posts record data-center revenue",
+      "keywords": ["voltaic", "results", "revenue", "developments", "supply"],
+      "paragraphs": [
+        "Voltaic Semiconductors reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "The company said demand from cloud providers for its Arc-series accelerators continued to exceed supply through the fourth quarter.",
+        "Management warned that limited advanced packaging capacity would remain a supply constraint for at least two more quarters.",
+        "Voltaic announced the Arc 5 accelerator, which it expects to begin shipping to customers in the first half of next year.",
+        "Analysts noted that rising competition from Nimbus Compute and in-house chips at large cloud providers could pressure pricing over time."
+      ]
+    },
+    {
+      "slug": "nimbus-mx3-launch",
+      "title": "Nimbus Compute unveils MX3 accelerator to challenge Voltaic",
+      "keywords": ["nimbus", "competitors", "launch", "developments", "rival"],
+      "paragraphs": [
+        "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+        "Nimbus Compute reported accelerator revenue of $4.1 billion in 2025, up from $2.3 billion in 2024.",
+        "The MX3 ships with more on-package memory than competing products, a feature the company says benefits inference on very large models.",
+        "Nimbus Compute said two major cloud customers have committed to deploying MX3 clusters next year.",
+        "The company acknowledged that its software ecosystem remains less mature than Voltaic's, which remains a barrier to adoption for some customers."
+      ]
+    },
+    {
+      "slug": "helix-inference-chips",
+      "title": "Helix Silicon raises funding for low-power inference chips",
+      "keywords": ["helix", "competitors", "startup", "inference"],
+      "paragraphs": [
+        "Helix Silicon, a startup focused on low-power inference accelerators, closed a new funding round to expand production.",
+        "Helix Silicon reported revenue of $0.6 billion in 2025, up from $0.2 billion in 2024, mostly from edge and telecom customers.",
+        "The company competes with Voltaic Semiconductors and Nimbus Compute in inference workloads rather than large-scale training.",
+        "Helix Silicon launched the H2 inference card, which it claims delivers higher performance per watt than general-purpose accelerators."
+      ]
+    },
+    {
+      "slug": "aster-cloud-in-house-chips",
+      "title": "Aster Cloud expands in-house Tensor chips, reducing reliance on suppliers",
+      "keywords": ["aster", "cloud", "competitors", "in-house", "risk"],
+      "paragraphs": [
+        "Aster Cloud said it will expand deployment of its in-house Tensor accelerators across its data centers.",
+        "The cloud provider plans capital expenditure of $52 billion this year, a significant share of which is earmarked for AI infrastructure.",
+        "Industry observers view in-house chips from Aster Cloud as a long-term risk to merchant accelerator suppliers such as Voltaic Semiconductors.",
+        "Aster Cloud said it will continue buying Voltaic accelerators for customers who require its software ecosystem."
+      ]
+    },
+    {
+      "slug": "ai-accelerator-market-overview",
+      "title": "AI accelerator market overview: Voltaic leads, rivals close in",
+      "keywords": ["voltaic", "competitors", "share", "overview", "rivals"],
+      "paragraphs": [
+        "Meridian Research estimates the AI accelerator market reached $61 billion in 2025.",
+        "Voltaic Semiconductors remains the market leader, with rivals Nimbus Compute, Helix Silicon and Quanta Forge Labs competing for share.",
+        "In-house chips from cloud providers such as Aster Cloud represent a growing alternative to merchant accelerators.",
+        "Meridian Research expects price competition to intensify as more competitors ship products at volume.",
+        "Supply of advanced packaging and high-bandwidth memory remains the main constraint on industry growth."
+      ]
+    },
+    {
+      "slug": "accelerator-export-rules",
+      "title": "New export rules restrict advanced accelerator shipments",
+      "keywords": ["voltaic", "nimbus", "export", "regulation", "risk"],
+      "paragraphs": [
+        "Regulators introduced new export restrictions on advanced AI accelerators to several regions.",
+        "Voltaic Semiconductors said the rules could affect about 12 percent of its data-center revenue.",
+        "Nimbus Compute said its exposure to the restricted regions is limited.",
+        "Analysts said the restrictions increase regulatory risk for suppliers with large international customer bases."
+      ]
+    },
+    {
+      "slug": "quanta-forge-open-compiler",
+      "title": "Quanta Forge Labs releases open-source compiler stack",
+      "keywords": ["quanta", "forge", "competitors", "software", "developments"],
+      "paragraphs": [
+        "Quanta Forge Labs released an open-source compiler stack that lets models run across accelerators from different vendors.",
+        "The company positions the stack as an alternative to Voltaic's proprietary software ecosystem, which analysts describe as a key competitive moat.",
+        "Quanta Forge Labs also sells its own training accelerator and reported revenue of $1.1 billion in 2025.",
+        "Several startups announced support for the Quanta Forge Labs stack at launch."
+      ]
+    },
+    {
+      "slug": "voltaic-vs-nimbus-benchmarks",
+      "title": "Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3",
+      "keywords": ["voltaic", "nimbus", "comparison", "benchmark", "versus"],
+      "paragraphs": [
+        "Independent benchmarks published this month compare Voltaic's Arc 4 with the Nimbus Compute MX3 on training and inference tasks.",
+        "The Arc 4 led on most training benchmarks, while the MX3 was competitive on inference of very large models.",
+        "Nimbus Compute prices the MX3 roughly 20 percent below the Arc 4, according to the reviewers.",
+        "Reviewers said Voltaic's software tools remain easier to use, while Nimbus Compute has improved its developer tooling."
+      ]
+    },
+    {
+      "slug": "voltaic-orbital-partnership",
+      "title": "Voltaic announces sovereign AI data-center partnership with Orbital Networks",
+      "keywords": ["voltaic", "partnership", "developments", "announcements"],
+      "paragraphs": [
+        "Voltaic Semiconductors announced a partnership with Orbital Networks to build sovereign AI data centers in three countries.",
+        "The agreement includes multi-year supply commitments for Arc accelerators and networking equipment.",
+        "Voltaic said the partnership expands its presence in government and telecom markets."
+      ]
+    },
+    {
+      "slug": "advanced-packaging-shortage",
+      "title": "Advanced packaging shortage squeezes accelerator supply",
+      "snippet": "Suppliers say advanced packaging capacity remains tight, delaying accelerator shipments for several vendors including Voltaic and Nimbus Compute.",
+      "keywords": ["voltaic", "nimbus", "supply", "shortage", "risk", "developments"],
+      "status": 503,
+      "paragraphs": []
+    }
+  ]
+}

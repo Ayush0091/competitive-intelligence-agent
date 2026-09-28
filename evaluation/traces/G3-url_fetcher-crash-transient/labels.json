@@ -1,0 +1,147 @@
+{
+  "scenario": "G3-url_fetcher-crash-transient",
+  "goal": "Research recent developments of Voltaic Semiconductors",
+  "injected": "url_fetcher:crash:1",
+  "fault_triggered": true,
+  "crashed": null,
+  "status": "completed",
+  "tasks": "6/6",
+  "affected_task_status": [
+    "completed"
+  ],
+  "recoveries": 1,
+  "sources": 5,
+  "calls": [
+    {
+      "tool": "web_search",
+      "role": "primary",
+      "attempt": 1,
+      "target": "Voltaic Semiconductors recent developments",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "web_search",
+      "role": "primary",
+      "attempt": 1,
+      "target": "Voltaic Semiconductors announcements news",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "web_search",
+      "role": "primary",
+      "attempt": 1,
+      "target": "Voltaic Semiconductors competitors",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "primary",
+      "attempt": 1,
+      "target": "https://synthetic.example/voltaic-fy2025-results",
+      "truth_faulty": true,
+      "truth_reason": "injected:crash",
+      "agent_flagged": true,
+      "agent_error": "RuntimeError: injected tool crash"
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "retry",
+      "attempt": 2,
+      "target": "https://synthetic.example/voltaic-fy2025-results",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "primary",
+      "attempt": 1,
+      "target": "https://synthetic.example/voltaic-orbital-partnership",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "primary",
+      "attempt": 1,
+      "target": "https://synthetic.example/ai-accelerator-market-overview",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "primary",
+      "attempt": 1,
+      "target": "https://synthetic.example/nimbus-mx3-launch",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "url_fetcher",
+      "role": "primary",
+      "attempt": 1,
+      "target": "https://synthetic.example/voltaic-vs-nimbus-benchmarks",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "calculator",
+      "role": "primary",
+      "attempt": 1,
+      "target": "(18.4 - 10.2) / 10.2 * 100",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "calculator",
+      "role": "primary",
+      "attempt": 1,
+      "target": "(4.1 - 2.3) / 2.3 * 100",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "calculator",
+      "role": "primary",
+      "attempt": 1,
+      "target": "18.4 / (18.4 + 4.1) * 100",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    },
+    {
+      "tool": "calculator",
+      "role": "primary",
+      "attempt": 1,
+      "target": "4.1 / (18.4 + 4.1) * 100",
+      "truth_faulty": false,
+      "truth_reason": "clean",
+      "agent_flagged": false,
+      "agent_error": null
+    }
+  ],
+  "recovered": true
+}

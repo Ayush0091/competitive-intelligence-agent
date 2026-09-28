@@ -1,0 +1,376 @@
+{
+  "goal": "Research recent developments of AMD in AI accelerators",
+  "status": "completed",
+  "data_mode": "live",
+  "planner": "llm",
+  "llm": "ollama:qwen3:8b",
+  "tasks_total": 6,
+  "tasks_completed": 5,
+  "tasks_failed": 0,
+  "tools_used": [
+    "url_fetcher",
+    "web_search"
+  ],
+  "failures": 4,
+  "recoveries": 3,
+  "sources_analyzed": 5,
+  "report": {
+    "target_company": "AMD",
+    "executive_summary": "AMD has announced the MI400-series AI accelerators for 2026, targeting data center growth and expanding its AI ecosystem with partnerships and new products.",
+    "competitors": [
+      {
+        "name": "Nvidia",
+        "summary": "AMD is attempting to convert Nvidia's AI infrastructure customers into multi-vendor buyers.",
+        "source_ids": [
+          4
+        ],
+        "kind": "inference"
+      },
+      {
+        "name": "Meta",
+        "summary": "Meta has combined with OpenAI for AMD accelerator capacity.",
+        "source_ids": [
+          4
+        ],
+        "kind": "inference"
+      },
+      {
+        "name": "Microsoft",
+        "summary": "Microsoft Azure is an early customer of AMD's Helios rack-scale system.",
+        "source_ids": [
+          4
+        ],
+        "kind": "inference"
+      }
+    ],
+    "recent_developments": [
+      {
+        "text": "AMD is set to launch its MI400-series AI accelerators in 2H 2026.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD introduced the MI400 Series GPUs, targeting both training and inference workloads.",
+        "source_ids": [
+          3
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD launched the Helios rack-scale system, built around the MI400 accelerators.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      }
+    ],
+    "market_signals": [
+      {
+        "text": "Analysts expect AMD's MI400-series rollout to drive significant data-center revenue growth.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD's shares traded near $553 during the Advancing AI 2026 event, reflecting investor confidence.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD's AI event marked its clearest attempt to convert Nvidia's AI infrastructure customers into multi-vendor buyers.",
+        "source_ids": [
+          4
+        ],
+        "kind": "inference"
+      }
+    ],
+    "risks": [
+      {
+        "text": "The success of the MI400-series depends on market adoption and competition from established players like Nvidia.",
+        "source_ids": [],
+        "kind": "inference"
+      },
+      {
+        "text": "AMD's ability to scale production and meet demand for the MI400-series could impact its growth projections.",
+        "source_ids": [],
+        "kind": "inference"
+      },
+      {
+        "text": "The performance and cost-effectiveness of the Helios rack-scale system will determine its market acceptance.",
+        "source_ids": [],
+        "kind": "inference"
+      }
+    ],
+    "synthesis_method": "llm (ollama:qwen3:8b); citations enforced"
+  },
+  "metrics": [],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/",
+      "title": "Press Kit: Advancing AI 2026 - AMD Newsroom",
+      "snippet": "AMD showcased the latest advancements in AI solutions and high-performance computing on July 23, 2026 , in San Francisco at its flagship global event, Advancing AI 2026 . AMD leaders joined developers, customers, enterprise leaders and partners to offer blueprints for building, deploying and scaling AI using AMD technology.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 2,
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth",
+      "title": "AMD's next-generation AI chips set to power 2026 data center growth",
+      "snippet": "AMD (NASDAQ: AMD ) is set to launch its MI400-series AI accelerators in 2H 2026 . Analysts expect the rollout to drive significant growth, with data-center revenue projected to surge 73%, fueled by strong GPU sales, new server CPUs, and AI infrastructure spending.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 3,
+      "url": "https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics",
+      "title": "AMD Advancing AI 2026: Top News On AI Chips, CPUs, Robotics",
+      "snippet": "The most surprising partnership news for AMD during AAI 2026 was a new strategic partnership with Claude maker Anthropic involving a future $5 billion strategic equity investment by the AI upstart ...",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 4,
+      "url": "https://tech-insider.org/amd-advancing-ai-2026/",
+      "title": "AMD Advancing AI 2026: Helios Rack Hits $5.25M",
+      "snippet": "AMD unveiled Helios AI racks and MI400 GPUs at Advancing AI 2026 , with $5.25M pricing, 12GW in OpenAI and Meta orders, and stock near $553.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 5,
+      "url": "https://www.amd.com/en/partner/browse-by-resource/partner-insights-articles/ces-2026-ai-ecosystem.html",
+      "title": "AMD at CES 2026",
+      "snippet": "With a host of new products announced at CES 2026 , AMD continues its mission of delivering an open ecosystem, enabling AI everywhere, for everyone. From rack-scale infrastructure in the data center to embedded systems to on-device AI , the AMD portfolio of AI products is growing and offering customers more flexibility and performance than ever.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Search for recent news about AMD's AI accelerators",
+      "tool": "web_search",
+      "status": "completed_with_recovery",
+      "note": "5 results via retry"
+    },
+    {
+      "id": 2,
+      "description": "Search for AMD's AI accelerator product launches",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 3,
+      "description": "Search for AMD's AI accelerator partnerships and collaborations",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 4,
+      "description": "Fetch the most relevant sources",
+      "tool": "url_fetcher",
+      "status": "completed_with_recovery",
+      "note": "3 full pages, 2 snippet fallbacks, 0 skipped"
+    },
+    {
+      "id": 5,
+      "description": "Compute key metrics from the sources",
+      "tool": "calculator",
+      "status": "skipped",
+      "note": "no comparable numeric figures found in sources (nothing computed)"
+    },
+    {
+      "id": 6,
+      "description": "Write the report on AMD's recent developments in AI accelerators",
+      "tool": "synthesize",
+      "status": "completed",
+      "note": "llm: 3 competitors, 3 developments, 3 signals, 3 risks"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: invalid tool response: missing \"results\" [malformed_response]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "recovery",
+      "message": "Recovered via retry (attempt 2/2)",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: request timed out (ReadTimeout) [timeout]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: request timed out (ReadTimeout) [timeout]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S1 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: HTTP 403 Forbidden [http_error]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S2 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'Projected data-center revenue growth for 2026': not a calculation (a single copied number)",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'Price increase of AMD shares from start of 2026 to event': number 276.5 not found in cited sources",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "info",
+      "message": "dropped metric 'Increase in TOPs for AMD Ryzen AI platforms': not a calculation (a single copied number)",
+      "tool": "calculator"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerators recent developments 2026\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "invalid tool response: missing \"results\"",
+      "role": "primary"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerators recent developments 2026\"",
+      "attempt": 2,
+      "success": true,
+      "duration_ms": 859.5,
+      "error": null,
+      "role": "retry"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator product launches 2026\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 766.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator partnerships 2026\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 684.9,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "request timed out (ReadTimeout)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.1,
+      "error": "request timed out (ReadTimeout)",
+      "role": "retry"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-...\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 495.7,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 463.1,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://tech-insider.org/amd-advancing-ai-2026/\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 633.1,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://www.amd.com/en/partner/browse-by-resource/partner-insights-articles/ces-2026-ai-ec...\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 536.2,
+      "error": null,
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-27T14:33:22",
+  "duration_s": 334.31
+}

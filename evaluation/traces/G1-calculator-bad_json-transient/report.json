@@ -1,0 +1,437 @@
+{
+  "goal": "Analyze the competitive landscape of Voltaic Semiconductors in the AI accelerator market",
+  "status": "completed",
+  "data_mode": "offline_synthetic",
+  "planner": "template",
+  "llm": "none",
+  "tasks_total": 6,
+  "tasks_completed": 6,
+  "tasks_failed": 0,
+  "tools_used": [
+    "calculator",
+    "url_fetcher",
+    "web_search"
+  ],
+  "failures": 1,
+  "recoveries": 1,
+  "sources_analyzed": 5,
+  "report": {
+    "target_company": "Voltaic Semiconductors",
+    "executive_summary": "Evidence base: 5 sources (5 full pages, 0 snippet-only) about Voltaic Semiconductors (market: AI accelerator market). Companies/alternatives appearing in competitive contexts: Nimbus Compute, Helix Silicon, Quanta Forge Labs. Collected 4 development, 5 competitive-signal and 5 risk statements. Example computed metric: Nimbus Compute: revenue growth vs prior period = 78.3%. (Auto-generated overview without an LLM; see cited statements below.)",
+    "competitors": [
+      {
+        "name": "Nimbus Compute",
+        "summary": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+        "source_ids": [
+          1,
+          2,
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "Helix Silicon",
+        "summary": "Voltaic Semiconductors remains the market leader, with rivals Nimbus Compute, Helix Silicon and Quanta Forge Labs competing for share.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "Quanta Forge Labs",
+        "summary": "Voltaic Semiconductors remains the market leader, with rivals Nimbus Compute, Helix Silicon and Quanta Forge Labs competing for share.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      }
+    ],
+    "recent_developments": [
+      {
+        "text": "Voltaic Semiconductors announced a partnership with Orbital Networks to build sovereign AI data centers in three countries.",
+        "source_ids": [
+          3
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic said the partnership expands its presence in government and telecom markets.",
+        "source_ids": [
+          3
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic announced the Arc 5 accelerator, which it expects to begin shipping to customers in the first half of next year.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      }
+    ],
+    "market_signals": [
+      {
+        "text": "Voltaic Semiconductors remains the market leader, with rivals Nimbus Compute, Helix Silicon and Quanta Forge Labs competing for share.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic Semiconductors reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic Semiconductors said the rules could affect about 12 percent of its data-center revenue.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Nimbus Compute reported accelerator revenue of $4.1 billion in 2025, up from $2.3 billion in 2024.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Nimbus Compute said two major cloud customers have committed to deploying MX3 clusters next year.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      }
+    ],
+    "risks": [
+      {
+        "text": "Analysts noted that rising competition from Nimbus Compute and in-house chips at large cloud providers could pressure pricing over time.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Nimbus Compute said its exposure to the restricted regions is limited.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Supply of advanced packaging and high-bandwidth memory remains the main constraint on industry growth.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "The company acknowledged that its software ecosystem remains less mature than Voltaic's, which remains a barrier to adoption for some customers.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Management warned that limited advanced packaging capacity would remain a supply constraint for at least two more quarters.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      }
+    ],
+    "synthesis_method": "extractive (no LLM): findings are sentences quoted from sources; competitor list is heuristic"
+  },
+  "metrics": [
+    {
+      "label": "Nimbus Compute: revenue growth vs prior period",
+      "expression": "(4.1 - 2.3) / 2.3 * 100",
+      "value": 78.26086956521739,
+      "unit": "%",
+      "source_ids": [
+        2
+      ],
+      "status": "ok",
+      "error": null
+    },
+    {
+      "label": "Voltaic Semiconductors: revenue growth vs prior period",
+      "expression": "(18.4 - 10.2) / 10.2 * 100",
+      "value": 80.3921568627451,
+      "unit": "%",
+      "source_ids": [
+        4
+      ],
+      "status": "ok",
+      "error": null
+    },
+    {
+      "label": "Nimbus Compute: share of combined reported revenue of companies found (not total market share)",
+      "expression": "4.1 / (4.1 + 18.4) * 100",
+      "value": 18.22222222222222,
+      "unit": "%",
+      "source_ids": [
+        2,
+        4
+      ],
+      "status": "ok",
+      "error": null
+    },
+    {
+      "label": "Voltaic Semiconductors: share of combined reported revenue of companies found (not total market share)",
+      "expression": "18.4 / (4.1 + 18.4) * 100",
+      "value": 81.77777777777777,
+      "unit": "%",
+      "source_ids": [
+        2,
+        4
+      ],
+      "status": "ok",
+      "error": null
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://synthetic.example/ai-accelerator-market-overview",
+      "title": "[SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in",
+      "snippet": "Meridian Research estimates the AI accelerator market reached $61 billion in 2025.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 2,
+      "url": "https://synthetic.example/nimbus-mx3-launch",
+      "title": "[SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic",
+      "snippet": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 3,
+      "url": "https://synthetic.example/voltaic-orbital-partnership",
+      "title": "[SYNTHETIC] Voltaic announces sovereign AI data-center partnership with Orbital Networks",
+      "snippet": "Voltaic Semiconductors announced a partnership with Orbital Networks to build sovereign AI data centers in three countries.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 4,
+      "url": "https://synthetic.example/voltaic-fy2025-results",
+      "title": "[SYNTHETIC] Voltaic Semiconductors posts record data-center revenue",
+      "snippet": "Voltaic Semiconductors reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 5,
+      "url": "https://synthetic.example/accelerator-export-rules",
+      "title": "[SYNTHETIC] New export rules restrict advanced accelerator shipments",
+      "snippet": "Regulators introduced new export restrictions on advanced AI accelerators to several regions.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Identify major competitors of Voltaic Semiconductors",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 2,
+      "description": "Research recent developments for Voltaic Semiconductors",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 3,
+      "description": "Find market-share and financial signals for Voltaic Semiconductors",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 4,
+      "description": "Retrieve and read the most relevant public sources",
+      "tool": "url_fetcher",
+      "status": "completed",
+      "note": "5 full pages, 0 snippet fallbacks, 0 skipped"
+    },
+    {
+      "id": 5,
+      "description": "Compute comparable metrics from figures stated in sources",
+      "tool": "calculator",
+      "status": "completed",
+      "note": "4/4 metrics computed"
+    },
+    {
+      "id": 6,
+      "description": "Synthesize validated evidence into the final report",
+      "tool": "synthesize",
+      "status": "completed",
+      "note": "extractive: 3 competitors, 4 developments, 5 signals, 5 risks"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 5,
+      "kind": "failure",
+      "message": "calculator: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "calculator"
+    },
+    {
+      "task_id": 5,
+      "kind": "recovery",
+      "message": "Recovered via retry (attempt 2/2)",
+      "tool": "calculator"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"Voltaic Semiconductors competitors AI accelerator\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"Voltaic Semiconductors AI accelerator recent developments\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"Voltaic Semiconductors AI accelerator market share revenue\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/ai-accelerator-market-overview\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.6,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/nimbus-mx3-launch\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.6,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-orbital-partnership\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-fy2025-results\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/accelerator-export-rules\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"(4.1 - 2.3) / 2.3 * 100\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"(4.1 - 2.3) / 2.3 * 100\"",
+      "attempt": 2,
+      "success": true,
+      "duration_ms": 0.0,
+      "error": null,
+      "role": "retry"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"(18.4 - 10.2) / 10.2 * 100\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.0,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"4.1 / (4.1 + 18.4) * 100\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.0,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"18.4 / (4.1 + 18.4) * 100\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.0,
+      "error": null,
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-28T14:54:02",
+  "duration_s": 0.01
+}

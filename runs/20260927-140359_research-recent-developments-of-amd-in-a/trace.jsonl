@@ -1,0 +1,64 @@
+{"ts": "2026-09-27T08:34:02.545+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T08:34:03.404+00:00", "tag": "AGENT", "message": "Goal received: \"Research recent developments of AMD in AI accelerators\""}
+{"ts": "2026-09-27T08:34:03.404+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[wikipedia]"}
+{"ts": "2026-09-27T08:34:03.406+00:00", "tag": "FAULT", "message": "Deliberate failure armed: web_search -> 'malformed' for the next 1 call(s) (validator is not told)"}
+{"ts": "2026-09-27T08:34:03.406+00:00", "tag": "FAULT", "message": "Deliberate failure armed: url_fetcher -> 'timeout' for the next 2 call(s) (validator is not told)"}
+{"ts": "2026-09-27T08:35:15.779+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 72.4s (952 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T08:35:15.783+00:00", "tag": "PLAN", "message": "5 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T08:35:15.783+00:00", "tag": "TASK 1", "message": "Search for recent AMD AI accelerator news", "task_id": 1}
+{"ts": "2026-09-27T08:35:15.783+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator recent developments\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:15.784+00:00", "tag": "ERROR", "message": "invalid tool response: missing \"results\" [malformed_response]", "task_id": 1, "tool": "web_search", "duration_ms": 0.1, "error_type": "malformed_response"}
+{"ts": "2026-09-27T08:35:15.784+00:00", "tag": "RECOVERY", "message": "Validation failed. Retry attempt 1/1 in 0.5s...", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:16.285+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator recent developments\" (attempt 2)", "task_id": 1, "tool": "web_search", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-27T08:35:16.566+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 284.6, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:16.566+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:16.566+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"AMD accelerator\"", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:16.566+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD accelerator\" (attempt 3)", "task_id": 1, "tool": "web_search", "attempt": 3, "role": "fallback"}
+{"ts": "2026-09-27T08:35:16.652+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 79.1, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:16.652+00:00", "tag": "RECOVERY", "message": "Giving up after 3 attempt(s): HTTP 403 Forbidden", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:16.652+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 1}
+{"ts": "2026-09-27T08:35:31.310+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 14.7s (242 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:35:31.311+00:00", "tag": "REPLAN", "message": "New query \"AMD AI chip advancements 2024\" - Broadening the search to include 'AI chip' instead of 'accelerator' may yield more recent and relevant results, especially considering potential variations in terminology or focus areas.", "task_id": 1}
+{"ts": "2026-09-27T08:35:31.312+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI chip advancements 2024\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 1, "tool": "web_search", "duration_ms": 312.7, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "TASK 1", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 1, "status": "failed"}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "TASK 2", "message": "Search for AMD AI accelerator product launches", "task_id": 2}
+{"ts": "2026-09-27T08:35:31.621+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator product launches 2026\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:31.719+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 93.5, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:31.720+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:31.720+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"AMD accelerator product\"", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:31.720+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD accelerator product\" (attempt 2)", "task_id": 2, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:35:31.819+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 96.8, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:31.820+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:31.820+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 2}
+{"ts": "2026-09-27T08:35:42.720+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 10.9s (212 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:35:42.720+00:00", "tag": "REPLAN", "message": "New query \"AMD AI chip developments 2025\" - Broadening the search to include general AI chip developments may bypass restrictions and provide relevant information on AMD's AI accelerator advancements.", "task_id": 2}
+{"ts": "2026-09-27T08:35:42.720+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI chip developments 2025\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:43.044+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 2, "tool": "web_search", "duration_ms": 323.4, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:43.044+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:43.044+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 2, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:43.045+00:00", "tag": "TASK 2", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 2, "status": "failed"}
+{"ts": "2026-09-27T08:35:43.045+00:00", "tag": "TASK 3", "message": "Search for AMD AI accelerator partnerships", "task_id": 3}
+{"ts": "2026-09-27T08:35:43.045+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator partnerships 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:43.146+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 99.6, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:43.146+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:43.146+00:00", "tag": "RECOVERY", "message": "Switching to fallback: simplified query \"AMD accelerator partnerships\"", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:43.146+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD accelerator partnerships\" (attempt 2)", "task_id": 3, "tool": "web_search", "attempt": 2, "role": "fallback"}
+{"ts": "2026-09-27T08:35:43.247+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 98.4, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:43.248+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:43.248+00:00", "tag": "REPLAN", "message": "Tool-level recovery exhausted; asking the LLM for an alternative approach", "task_id": 3}
+{"ts": "2026-09-27T08:35:52.902+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 9.7s (176 chars) - You are the re-planning module of a competitive-intelligence"}
+{"ts": "2026-09-27T08:35:52.902+00:00", "tag": "REPLAN", "message": "New query \"AMD AI accelerator collaborations\" - Using 'collaborations' instead of 'partnerships' may yield different results and avoid the same access restrictions.", "task_id": 3}
+{"ts": "2026-09-27T08:35:52.903+00:00", "tag": "TOOL", "message": "web_search[wikipedia] query=\"AMD AI accelerator collaborations\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T08:35:53.230+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 3, "tool": "web_search", "duration_ms": 327.2, "error_type": "http_error"}
+{"ts": "2026-09-27T08:35:53.230+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:53.230+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 3, "tool": "web_search"}
+{"ts": "2026-09-27T08:35:53.230+00:00", "tag": "TASK 3", "message": "FAILED - search failed after retries/fallbacks/re-plan", "task_id": 3, "status": "failed"}
+{"ts": "2026-09-27T08:35:53.230+00:00", "tag": "TASK 4", "message": "Fetch top sources for AMD AI accelerator news", "task_id": 4}
+{"ts": "2026-09-27T08:35:53.231+00:00", "tag": "TASK 4", "message": "FAILED - no search results available to fetch", "task_id": 4, "status": "failed"}
+{"ts": "2026-09-27T08:35:53.231+00:00", "tag": "TASK 5", "message": "Synthesize key developments from sources", "task_id": 5}
+{"ts": "2026-09-27T08:35:53.231+00:00", "tag": "TASK 5", "message": "FAILED - no validated sources; cannot synthesize", "task_id": 5, "status": "failed"}
+{"ts": "2026-09-27T08:35:53.231+00:00", "tag": "RESULT", "message": "status=failed | tasks 0/5 | tool calls=10 | failures=10 | recoveries=0 | sources=0"}
+{"ts": "2026-09-27T08:35:53.234+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-140359_research-recent-developments-of-amd-in-a\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-140359_research-recent-developments-of-amd-in-a\\report.md"}

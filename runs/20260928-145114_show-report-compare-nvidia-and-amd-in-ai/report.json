@@ -1,0 +1,376 @@
+{
+  "goal": "show-report \"Compare NVIDIA and AMD in AI accelerators",
+  "status": "completed",
+  "data_mode": "live",
+  "planner": "template",
+  "llm": "none",
+  "tasks_total": 6,
+  "tasks_completed": 5,
+  "tasks_failed": 0,
+  "tools_used": [
+    "url_fetcher",
+    "web_search"
+  ],
+  "failures": 1,
+  "recoveries": 1,
+  "sources_analyzed": 5,
+  "report": {
+    "target_company": "Compare NVIDIA, AMD",
+    "executive_summary": "Evidence base: 5 sources (4 full pages, 1 snippet-only) about Compare NVIDIA, AMD (market: AI accelerators). Companies/alternatives appearing in competitive contexts: AMD, NVLink, Llama, Tensor Cores, June, Market Reality. Collected 5 development, 5 competitive-signal and 5 risk statements. (Auto-generated overview without an LLM; see cited statements below.)",
+    "competitors": [
+      {
+        "name": "AMD",
+        "summary": "AMD vs NVIDIA GPU: Which Performs Better for AI Workloads?",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "NVLink",
+        "summary": ": 288GB HBM3E, 8 TB/s bandwidth, ~4,600 TFLOPS FP8 \u2014 AMD leads on memory capacity, NVIDIA leads on NVLink interconnect (1.8 TB/s vs ~128 GB/s).",
+        "source_ids": [
+          2,
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "Llama",
+        "summary": "achieved near-parity with B200 on Llama 2 70B LoRA (10.18 min vs 9.85 min).",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "Tensor Cores",
+        "summary": "At the hardware level, teams often reduce the comparison to Tensor Cores versus Matrix Cores.",
+        "source_ids": [
+          1,
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "June",
+        "summary": "AMD launched MI300 for AI training workloads in June 2023 and is competing with NVIDIA for market share.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "name": "Market Reality",
+        "summary": "",
+        "source_ids": [],
+        "kind": "inference"
+      }
+    ],
+    "recent_developments": [
+      {
+        "text": "AMD launched MI300 for AI training workloads in June 2023 and is competing with NVIDIA for market share.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "In June 2026 AMD announced the acquisition of MEXT, whose predictive-memory technology is designed to make flash behave more like DRAM and cut data center memory cost.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "AMD launched the Instinct MI350X and MI355X on June 12, 2025 at Advancing AI 2025.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "At GTC on March 16, 2026 NVIDIA expanded it to seven chips, the Vera CPU, Rubin GPU, NVLink 6 Switch, ConnectX-9 SuperNIC, BlueField-4 DPU, Spectrum-6 Ethernet switch and Groq 3 LPU, and declared them in full production.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "In 2025, AMD acquired a team of AI hardware and software engineers from Untether AI along with compiler startup Brium.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      }
+    ],
+    "market_signals": [
+      {
+        "text": "NVIDIA holds the crown with its mature CUDA ecosystem and dominant market share, but AMD\u2019s Instinct line is rapidly closing the gap, offering greater memory capacity, open-source flexibility, and competitive performance at lower cost.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "NVIDIA is the scale leader in AI infrastructure, and AMD is the focused challenger.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Morgan Stanley put NVIDIA at roughly 85% of AI processor revenue in March 2026, with custom ASICs above 10% and AMD below 5%.",
+        "source_ids": [
+          2
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "NVIDIA holds ~80% of the AI accelerator market by revenue with $193.7B in FY2026 data center sales, versus AMD's estimated 5-7% share (~$7-8B in Instinct revenue).",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "The bigger structural threat to NVIDIA is custom silicon \u2014 Broadcom AI ASIC revenue hit $20B+ in FY2025 \u2014 not AMD.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      }
+    ],
+    "risks": [
+      {
+        "text": "A key insight is that NVIDIA\u2019s market lead maps directly to lower integration risk, while AMD\u2019s value shows up when you have a narrower use case and the engineering discipline to stay inside it.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Prominent Chinese technology companies, including Alibaba and Baidu, are increasingly switching from Nvidia hardware to internally developed chips as U.S. export controls restrict the capabilities of Nvidia's offerings in the country.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Resumed shipments to China, following regulatory clearances for the H20 and other GPUs, are seen by names like Goldman Sachs as a potential $2 billion to $5 billion near-term revenue tailwind.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "The risk that institutions remain underweight in the stock relative to S&P 500 benchmarks is also flagged as a potential headwind should sentiment shift or market leadership rotate away from AI.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Regulatory and competitive pressures in China continue to mount.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      }
+    ],
+    "synthesis_method": "extractive (no LLM): findings are sentences quoted from sources; competitor list is heuristic"
+  },
+  "metrics": [],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://fluence.ai/blog/amd-vs-nvidia-gpu",
+      "title": "AMD vs NVIDIA GPU: Which Performs Better for AI Workloads? - Fluence Cloud",
+      "snippet": "NVIDIA and AMD pursue the same goal\u2014accelerating AI at scale\u2014but their architectural strategies couldn\u2019t be more different. NVIDIA builds around specialized AI accelerators like Tensor Cores and the Transformer Engine, fine-tuned for matrix-heavy deep learning tasks. AMD, by contrast, emphasizes raw compute density and superior memory bandwidth, relying on vast compute units and high-capacity memory stacks to drive performance across massive models. [...] AMD has returned to the AI race with strategic intent. Its Instinct series of accelerators\u2014particularly the MI200, MI300X/MI325X, and upcoming MI350X\u2014marks a serious challenge to NVIDIA\u2019s grip on the data center market. These GPUs deliver exceptional memory capacity and bandwidth, crucial for handling today\u2019s increasingly large models. [...] NVIDIA is the scale leader in AI infrastructure, and AMD is the focused challenger. That matters because market scale affects everything downstream: hardware availability, software investment, framework support, hiring, vendor partnerships, and the confidence you can have in a roadmap when you\u2019re standardizing a platform.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 2,
+      "url": "https://aimultiple.com/ai-chip-makers",
+      "title": "Top 30+ AI Chip Makers: NVIDIA & Its Competitors",
+      "snippet": "NVIDIA\u2019s GPUs for retail users include the GeForce series, and Nintendo\u2019s Switch 2 runs on a custom NVIDIA processor.9\n\n#### Recent developments\n\n##### DGX Cloud Lepton\n\nAnnounced on May 19, 2025, NVIDIA\u2019s DGX Cloud Lepton is a marketplace that connects AI developers to NVIDIA\u2019s GPU cloud providers, including CoreWeave, Lambda, and Crusoe.10\n\n##### NVIDIA Dynamo [...] Atlas(shipping now): A transformer inference server featuring 8x Positron Archer Transformer Accelerators with 256 GB total HBM. The company claims >4x performance per watt and >3x performance per dollar compared to NVIDIA Hopper systems, benchmarked on Llama 3.1 8B with BF16 compute.95 [...] Groq has raised roughly $2.4 billion in disclosed funding and shipped products including the GroqChip\u2122 Processor and the GroqCard\u2122 Accelerator.77 Its most recent round, $650 million in growth capital announced on June 22, 2026, disclosed no valuation, which leaves the $6.9 billion post-money it announced on September 17, 2025 as its last confirmed valuation.7875\n\n### 11. SambaNova Systems",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 3,
+      "url": "https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networking-solutions-93CH-3481604",
+      "title": "AMD introduces new AI accelerators and networking solutions",
+      "snippet": "Advertisement\n\nThese recent developments reflect AMD's commitment to providing high-performance computing solutions for AI applications and its expanding AI solutions ecosystem. However, despite these efforts, it is not expected to significantly affect Nvidia\u2019s data center revenue, as the demand for AI chips currently surpasses supply.\n\n## InvestingPro Insights [...] AMD's growing presence in the cloud computing sector is further emphasized by its recent collaboration with Oracle (NYSE:ORCL) Cloud Infrastructure (OCI). AMD's Instinct MI300X accelerators will power OCI's new AI supercluster, designed to handle complex AI workloads. Early adopters of this offering include Fireworks AI, which has effectively scaled its services using the enhanced memory capacity of the AMD Instinct MI300X.\n\nAdvertisement [...] The AMD Instinct MI325X accelerators, built on the AMD CDNA 3 architecture, promise to deliver significant improvements in AI performance, featuring 256GB of HBM3E memory and 6.0TB/s bandwidth. This represents an increase in memory capacity and bandwidth compared to previous models, with the MI325X offering 1.3 times the peak theoretical FP16 and FP8 compute performance.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 4,
+      "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+      "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+      "snippet": "NVIDIA holds ~80% of the AI accelerator market by revenue with $193.7B in FY2026 data center sales, versus AMD's estimated 5-7% share (~$7-8B in Instinct revenue). AMD's MI350X matches B200 on FP8 compute (4,600 TFLOPS) and exceeds it on memory (288GB vs 192GB HBM3E), but NVIDIA's software maturity delivers 50-55% MFU versus AMD's ~45%, preserving a real-world performance gap. The bigger structural threat to NVIDIA is custom silicon \u2014 Broadcom AI ASIC revenue hit $20B+ in FY2025 \u2014 not AMD. [...] NVIDIA holds approximately 80% of the AI accelerator market in 2026, with data center revenue reaching $193.7 billion in FY2026. AMD's Instinct GPU line generated an estimated $7\u20138 billion in 2025, capturing roughly 5\u20137% market share. However, the competitive landscape is more nuanced than a two-horse race: hyperscaler custom silicon (Google TPU, AWS Trainium, Broadcom ASICs) collectively represents a larger and faster-growing threat to NVIDIA than AMD does. The AI accelerator total addressable [...] The AI accelerator market is transitioning from NVIDIA monopoly to a three-tier competitive structure: NVIDIA retains 60\u201375% through 2028, AMD reaches 10\u201315% as the credible merchant silicon alternative, and custom silicon captures 15\u201325% concentrated in cloud-locked inference. All three can grow simultaneously because TAM is expanding from ~$200B to $500B+.\n\nBoth companies can win. Data as of April 2026.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    },
+    {
+      "id": 5,
+      "url": "https://finance.yahoo.com/news/recent-developments-shaping-nvidia-investment-113602034.html",
+      "title": "How Recent Developments Are Shaping the NVIDIA Investment Story",
+      "snippet": "Several analysts, including Morgan Stanley with a target lift to $235, have cited persistent, outsized demand for NVIDIA's AI compute products. They applaud the accelerated ramps of Blackwell and GB300/B300 platforms as critical growth drivers.\n Bullish sentiment builds on NVIDIA's demonstrated execution and operational transparency. Analysts reward the company's cost control, expanding production capacity, and clear multi-year revenue guidance anchored by data center growth. [...] Nvidia's new RTX6000D AI chip, launched for the Chinese market, has received a muted reception. Many local firms are hesitant to commit, preferring to wait for the anticipated H20 or B30A models because of cost and performance concerns.\n The company is scaling back its DGX Cloud business, reducing direct competition with major cloud providers like AWS and instead placing greater emphasis on supporting its own internal research and development efforts. [...] Despite challenges, Nvidia remains active in expanding global AI infrastructure. The firm is entering new partnerships to invest in datacenter capacity in the UK with companies like CoreWeave and OpenAI. However, market volatility and skepticism about partner models persist.",
+      "retrieval": "full_page",
+      "origin_task": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Find head-to-head comparisons of Compare NVIDIA and AMD",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 2,
+      "description": "Research recent developments for Compare NVIDIA",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 3,
+      "description": "Research recent developments for AMD",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 4,
+      "description": "Retrieve and read the most relevant public sources",
+      "tool": "url_fetcher",
+      "status": "completed_with_recovery",
+      "note": "4 full pages, 1 snippet fallbacks, 0 skipped"
+    },
+    {
+      "id": 5,
+      "description": "Compute comparable metrics from figures stated in sources",
+      "tool": "calculator",
+      "status": "skipped",
+      "note": "no comparable numeric figures found in sources (nothing computed)"
+    },
+    {
+      "id": 6,
+      "description": "Synthesize validated evidence into the final report",
+      "tool": "synthesize",
+      "status": "completed",
+      "note": "extractive: 6 competitors, 5 developments, 5 signals, 5 risks"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: HTTP 403 Forbidden [http_error]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S3 instead of full page",
+      "tool": "url_fetcher"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"Compare NVIDIA vs AMD AI accelerators\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 1879.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"Compare NVIDIA AI accelerators recent developments\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 1289.8,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerators recent developments\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 3305.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://fluence.ai/blog/amd-vs-nvidia-gpu\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 2126.7,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://aimultiple.com/ai-chip-makers\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 1415.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networki...\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 98.8,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 617.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://finance.yahoo.com/news/recent-developments-shaping-nvidia-investment-113602034.htm...\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 923.7,
+      "error": null,
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-28T14:51:24",
+  "duration_s": 11.72
+}

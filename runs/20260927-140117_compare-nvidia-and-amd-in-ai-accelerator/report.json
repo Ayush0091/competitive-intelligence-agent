@@ -1,0 +1,324 @@
+{
+  "goal": "Compare NVIDIA and AMD in AI accelerators",
+  "status": "failed",
+  "data_mode": "live",
+  "planner": "llm",
+  "llm": "ollama:qwen3:8b",
+  "tasks_total": 7,
+  "tasks_completed": 0,
+  "tasks_failed": 6,
+  "tools_used": [
+    "web_search"
+  ],
+  "failures": 12,
+  "recoveries": 0,
+  "sources_analyzed": 0,
+  "report": {
+    "target_company": "NVIDIA, AMD",
+    "executive_summary": "No report could be produced: no validated sources were obtained. See the execution summary for the failures encountered.",
+    "competitors": [],
+    "recent_developments": [],
+    "market_signals": [],
+    "risks": [],
+    "synthesis_method": "none"
+  },
+  "metrics": [],
+  "sources": [],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Identify NVIDIA's AI accelerator offerings",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 2,
+      "description": "Identify AMD's AI accelerator offerings",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 3,
+      "description": "Find recent news on NVIDIA and AMD in AI accelerators",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 4,
+      "description": "Find market size and share data for AI accelerators",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 5,
+      "description": "Read the most relevant sources",
+      "tool": "url_fetcher",
+      "status": "failed",
+      "note": "no search results available to fetch"
+    },
+    {
+      "id": 6,
+      "description": "Compute comparable metrics",
+      "tool": "calculator",
+      "status": "skipped",
+      "note": "no sources to extract figures from"
+    },
+    {
+      "id": 7,
+      "description": "Write the competitive brief",
+      "tool": "synthesize",
+      "status": "failed",
+      "note": "no validated sources; cannot synthesize"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AI accelerators products\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 315.8,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA accelerators products\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 99.0,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AI hardware solutions\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 291.9,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerators products\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 89.9,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA accelerators products\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 87.2,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator solutions\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 315.1,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AMD AI accelerators news 2026\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 104.9,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA accelerators news\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 108.4,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA AMD AI chip competition\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 324.0,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "web_search",
+      "input_summary": "query=\"AI accelerators market share leaders\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 102.4,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "web_search",
+      "input_summary": "query=\"NVIDIA accelerators share\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 101.5,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 4,
+      "tool": "web_search",
+      "input_summary": "query=\"AI accelerator market size and growth forecast\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 301.8,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-27T14:01:20",
+  "duration_s": 159.65
+}

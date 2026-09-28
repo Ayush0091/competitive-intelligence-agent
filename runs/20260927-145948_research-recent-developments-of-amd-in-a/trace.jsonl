@@ -1,0 +1,78 @@
+{"ts": "2026-09-27T09:29:50.948+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T09:29:51.868+00:00", "tag": "AGENT", "message": "Goal received: \"Research recent developments of AMD in AI accelerators\""}
+{"ts": "2026-09-27T09:29:51.869+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[duckduckgo]"}
+{"ts": "2026-09-27T09:29:51.869+00:00", "tag": "FAULT", "message": "Deliberate failure armed: web_search -> 'malformed' for the next 1 call(s) (validator is not told)"}
+{"ts": "2026-09-27T09:29:51.870+00:00", "tag": "FAULT", "message": "Deliberate failure armed: url_fetcher -> 'timeout' for the next 2 call(s) (validator is not told)"}
+{"ts": "2026-09-27T09:31:42.604+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 110.7s (1432 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T09:31:42.607+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T09:31:42.607+00:00", "tag": "TASK 1", "message": "Search for recent news about AMD's AI accelerators", "task_id": 1}
+{"ts": "2026-09-27T09:31:42.607+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"AMD AI accelerators recent developments 2026\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:42.608+00:00", "tag": "ERROR", "message": "invalid tool response: missing \"results\" [malformed_response]", "task_id": 1, "tool": "web_search", "duration_ms": 0.1, "error_type": "malformed_response"}
+{"ts": "2026-09-27T09:31:42.608+00:00", "tag": "RECOVERY", "message": "Validation failed. Retry attempt 1/1 in 0.5s...", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T09:31:43.108+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"AMD AI accelerators recent developments 2026\" (attempt 2)", "task_id": 1, "tool": "web_search", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-27T09:31:43.885+00:00", "tag": "VALIDATION", "message": "passed in 776 ms", "task_id": 1, "tool": "web_search", "duration_ms": 776.3}
+{"ts": "2026-09-27T09:31:43.886+00:00", "tag": "RECOVERY", "message": "Recovered via retry (attempt 2/2)", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T09:31:43.886+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 1, "results": 5}
+{"ts": "2026-09-27T09:31:43.886+00:00", "tag": "RESULT", "message": "  - Press Kit: Advancing AI 2026 - AMD Newsroom | https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/", "task_id": 1}
+{"ts": "2026-09-27T09:31:43.887+00:00", "tag": "RESULT", "message": "  - AMD's next-generation AI chips set to power 2026 data center growth | https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth", "task_id": 1}
+{"ts": "2026-09-27T09:31:43.887+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Top News On AI Chips, CPUs, Robotics - CRN | https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics", "task_id": 1}
+{"ts": "2026-09-27T09:31:43.887+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Helios Rack Hits $5.25M | https://tech-insider.org/amd-advancing-ai-2026/", "task_id": 1}
+{"ts": "2026-09-27T09:31:43.887+00:00", "tag": "RESULT", "message": "  - AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 1}
+{"ts": "2026-09-27T09:31:43.888+00:00", "tag": "TASK 1", "message": "COMPLETED_WITH_RECOVERY - 5 results via retry", "task_id": 1, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T09:31:43.888+00:00", "tag": "TASK 2", "message": "Search for AMD's AI accelerator product launches", "task_id": 2}
+{"ts": "2026-09-27T09:31:43.888+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"AMD AI accelerator product launches 2026\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:44.590+00:00", "tag": "VALIDATION", "message": "passed in 701 ms", "task_id": 2, "tool": "web_search", "duration_ms": 700.8}
+{"ts": "2026-09-27T09:31:44.591+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 2, "results": 5}
+{"ts": "2026-09-27T09:31:44.591+00:00", "tag": "RESULT", "message": "  - AMD's next-generation AI chips set to power 2026 data center growth | https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth", "task_id": 2}
+{"ts": "2026-09-27T09:31:44.591+00:00", "tag": "RESULT", "message": "  - AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 2}
+{"ts": "2026-09-27T09:31:44.591+00:00", "tag": "RESULT", "message": "  - Press Kit: Advancing AI 2026 - AMD Newsroom | https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/", "task_id": 2}
+{"ts": "2026-09-27T09:31:44.592+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Helios Rack Hits $5.25M | https://tech-insider.org/amd-advancing-ai-2026/", "task_id": 2}
+{"ts": "2026-09-27T09:31:44.592+00:00", "tag": "RESULT", "message": "  - AMD Ryzen\u2122 AI PRO 400 Series CPUs Deliver Advanced AI for Desktops | https://www.amd.com/en/blogs/2026/amd-ryzen-ai-pro-400-series-cpus-deliver-advanced-ai-for-desktops.html", "task_id": 2}
+{"ts": "2026-09-27T09:31:44.592+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-27T09:31:44.593+00:00", "tag": "TASK 3", "message": "Search for AMD's AI accelerator partnerships and collaborations", "task_id": 3}
+{"ts": "2026-09-27T09:31:44.593+00:00", "tag": "TOOL", "message": "web_search[duckduckgo] query=\"AMD AI accelerator partnerships 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "VALIDATION", "message": "passed in 829 ms", "task_id": 3, "tool": "web_search", "duration_ms": 829.1}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "RESULT", "message": "5 valid results (provider=duckduckgo)", "task_id": 3, "results": 5}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "RESULT", "message": "  - Press Kit: Advancing AI 2026 - AMD Newsroom | https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/", "task_id": 3}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Helios Rack Hits $5.25M - tech-insider.org | https://tech-insider.org/amd-advancing-ai-2026/", "task_id": 3}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Top News On AI Chips, CPUs, Robotics - CRN | https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics", "task_id": 3}
+{"ts": "2026-09-27T09:31:45.423+00:00", "tag": "RESULT", "message": "  - AMD and OpenAI announce strategic partnership to deploy 6 gigawatts of ... | https://openai.com/index/openai-amd-strategic-partnership/", "task_id": 3}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "RESULT", "message": "  - AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 3}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "TASK 4", "message": "Fetch the most relevant sources", "task_id": 4}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-27T09:31:45.424+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T09:31:45.925+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-27T09:31:45.927+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.2, "error_type": "timeout"}
+{"ts": "2026-09-27T09:31:45.927+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T09:31:45.927+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S1 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T09:31:45.928+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:46.100+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 171.4, "error_type": "http_error"}
+{"ts": "2026-09-27T09:31:46.100+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T09:31:46.101+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T09:31:46.101+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S2 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T09:31:46.102+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:46.997+00:00", "tag": "VALIDATION", "message": "passed in 895 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 895.2}
+{"ts": "2026-09-27T09:31:46.997+00:00", "tag": "RESULT", "message": "S3: 21731 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T09:31:46.997+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://tech-insider.org/amd-advancing-ai-2026/\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:48.245+00:00", "tag": "VALIDATION", "message": "passed in 1247 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1246.8}
+{"ts": "2026-09-27T09:31:48.247+00:00", "tag": "RESULT", "message": "S4: 25185 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T09:31:48.247+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T09:31:48.419+00:00", "tag": "VALIDATION", "message": "passed in 173 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 172.8}
+{"ts": "2026-09-27T09:31:48.419+00:00", "tag": "RESULT", "message": "S5: 14106 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T09:31:48.419+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 3 full pages, 2 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T09:31:48.419+00:00", "tag": "TASK 5", "message": "Compute metrics if needed", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.899+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 85.5s (919 chars) - You extract comparable quantitative metrics for a competitiv"}
+{"ts": "2026-09-27T09:33:13.902+00:00", "tag": "VALIDATION", "message": "dropped metric 'Growth in data center revenue for AMD': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.902+00:00", "tag": "VALIDATION", "message": "dropped metric 'Increase in inference tokens per dollar for AMD Helios': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.902+00:00", "tag": "VALIDATION", "message": "dropped metric 'FP64 performance of AMD Instinct MI430X': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.903+00:00", "tag": "VALIDATION", "message": "dropped metric 'Revenue projection for AMD's TAM in 2030': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.903+00:00", "tag": "VALIDATION", "message": "dropped metric 'Price of AMD Helios rack-scale system': not a calculation (a single copied number)", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.903+00:00", "tag": "VALIDATION", "message": "dropped metric 'Increase in AMD shares during Advancing AI 2026': number 276.5 not found in cited sources", "task_id": 5}
+{"ts": "2026-09-27T09:33:13.903+00:00", "tag": "TASK 5", "message": "SKIPPED - all 6 proposed metric(s) failed validation (nothing computed)", "task_id": 5, "status": "skipped"}
+{"ts": "2026-09-27T09:33:13.903+00:00", "tag": "TASK 6", "message": "Write the report on AMD's recent developments in AI accelerators", "task_id": 6}
+{"ts": "2026-09-27T09:35:18.390+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 124.5s (1613 chars) - You are the reporting module of a competitive-intelligence a"}
+{"ts": "2026-09-27T09:35:18.392+00:00", "tag": "TASK 6", "message": "COMPLETED - llm: 1 competitors, 3 developments, 2 signals, 1 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-27T09:35:18.393+00:00", "tag": "RESULT", "message": "status=completed | tasks 5/6 | tool calls=10 | failures=4 | recoveries=3 | sources=5"}
+{"ts": "2026-09-27T09:35:18.396+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-145948_research-recent-developments-of-amd-in-a\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-145948_research-recent-developments-of-amd-in-a\\report.md"}

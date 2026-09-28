@@ -1,0 +1,61 @@
+{"ts": "2026-09-28T09:21:23.362+00:00", "tag": "AGENT", "message": "LLM health check: Ollama not reachable at http://localhost:11434 (ConnectError)"}
+{"ts": "2026-09-28T09:21:23.364+00:00", "tag": "AGENT", "message": "LLM unavailable -> using deterministic planner/synthesizer"}
+{"ts": "2026-09-28T09:21:24.441+00:00", "tag": "AGENT", "message": "Goal received: \"show-report \"Compare NVIDIA and AMD in AI accelerators\""}
+{"ts": "2026-09-28T09:21:24.441+00:00", "tag": "AGENT", "message": "mode=live | llm=none | search=web_search[tavily]"}
+{"ts": "2026-09-28T09:21:24.441+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-28T09:21:24.441+00:00", "tag": "TASK 1", "message": "Find head-to-head comparisons of Compare NVIDIA and AMD", "task_id": 1}
+{"ts": "2026-09-28T09:21:24.441+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"Compare NVIDIA vs AMD AI accelerators\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "VALIDATION", "message": "passed in 1880 ms", "task_id": 1, "tool": "web_search", "duration_ms": 1879.5}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 1, "results": 5}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "  - AMD vs NVIDIA GPU: Which Performs Better for AI Workloads? - Fluence | https://fluence.ai/blog/amd-vs-nvidia-gpu", "task_id": 1}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "  - AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200 | https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026", "task_id": 1}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "  - What is the Difference Between AMD and NVIDIA GPUs? | AI FAQ | Jarvislabs | https://jarvislabs.ai/ai-faqs/what-is-the-difference-between-amd-and-nvidia-gpus", "task_id": 1}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "  - NVIDIA vs AMD vs Broadcom: AI Inference Race 2026 | DataM Intelligence | https://www.datamintelligence.com/blogs/nvidia-vs-amd-vs-broadcom-ai-inference-2026", "task_id": 1}
+{"ts": "2026-09-28T09:21:26.335+00:00", "tag": "RESULT", "message": "  - AMD vs NVIDIA for AI Inference: 2025 GPU Comparison GIGAGPU | https://gigagpu.com/amd-vs-nvidia-ai-inference", "task_id": 1}
+{"ts": "2026-09-28T09:21:26.340+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-28T09:21:26.340+00:00", "tag": "TASK 2", "message": "Research recent developments for Compare NVIDIA", "task_id": 2}
+{"ts": "2026-09-28T09:21:26.342+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"Compare NVIDIA AI accelerators recent developments\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:27.620+00:00", "tag": "VALIDATION", "message": "passed in 1290 ms", "task_id": 2, "tool": "web_search", "duration_ms": 1289.8}
+{"ts": "2026-09-28T09:21:27.620+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 2, "results": 5}
+{"ts": "2026-09-28T09:21:27.620+00:00", "tag": "RESULT", "message": "  - Top 30+ AI Chip Makers: NVIDIA & Its Competitors | https://aimultiple.com/ai-chip-makers", "task_id": 2}
+{"ts": "2026-09-28T09:21:27.620+00:00", "tag": "RESULT", "message": "  - How Recent Developments Are Shaping the NVIDIA Investment Story | https://finance.yahoo.com/news/recent-developments-shaping-nvidia-investment-113602034.html", "task_id": 2}
+{"ts": "2026-09-28T09:21:27.620+00:00", "tag": "RESULT", "message": "  - NVIDIA AI GPU Market Share 2026: ~80% of AI Accelerators | https://siliconanalysts.com/analysis/nvidia-ai-accelerator-market-share-2024-2026", "task_id": 2}
+{"ts": "2026-09-28T09:21:27.636+00:00", "tag": "RESULT", "message": "  - 12 best GPUs for AI and machine learning in 2026 | Blog \u2014 Northflank | https://northflank.com/blog/best-gpu-for-ai", "task_id": 2}
+{"ts": "2026-09-28T09:21:27.636+00:00", "tag": "RESULT", "message": "  - Global AI Hardware Landscape 2026: Comparing Leading GPU, FPGA, and ASIC AI Acce | https://www.geniatech.com/ai-hardware-2025", "task_id": 2}
+{"ts": "2026-09-28T09:21:27.636+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-28T09:21:27.636+00:00", "tag": "TASK 3", "message": "Research recent developments for AMD", "task_id": 3}
+{"ts": "2026-09-28T09:21:27.636+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerators recent developments\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "VALIDATION", "message": "passed in 3305 ms", "task_id": 3, "tool": "web_search", "duration_ms": 3305.4}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 3, "results": 5}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI accelerators and networking solutions | https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networking-solutions-93CH-3481604", "task_id": 3}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI Infrastructure and accelerators | https://finance.yahoo.com/news/amd-introduces-ai-infrastructure-accelerators-091202747.html", "task_id": 3}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "  - AMD Delivers Leadership AI Performance with AMD Instinct MI325X Accelerators | https://finance.yahoo.com/news/amd-delivers-leadership-ai-performance-180000934.html", "task_id": 3}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "  - The Future of AI Accelerators: A Roadmap of Industry Leaders | https://www.linkedin.com/posts/nader-el-masri-md_the-future-of-ai-accelerators-a-roadmap-activity-7310216406921281536-rNmb", "task_id": 3}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "RESULT", "message": "  - AMD\u2019s upcoming MI450 AI accelerator will use advanced 2nm silicon | https://www.dlcompare.com/gaming-news/amd-s-upcoming-mi450-ai-accelerator-will-use-advanced-2nm-silicon-63628", "task_id": 3}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "TASK 4", "message": "Retrieve and read the most relevant public sources", "task_id": 4}
+{"ts": "2026-09-28T09:21:30.932+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://fluence.ai/blog/amd-vs-nvidia-gpu\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:33.065+00:00", "tag": "VALIDATION", "message": "passed in 2127 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 2126.7}
+{"ts": "2026-09-28T09:21:33.065+00:00", "tag": "RESULT", "message": "S1: 20789 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-28T09:21:33.065+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://aimultiple.com/ai-chip-makers\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:34.489+00:00", "tag": "VALIDATION", "message": "passed in 1415 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1415.4}
+{"ts": "2026-09-28T09:21:34.489+00:00", "tag": "RESULT", "message": "S2: 68956 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-28T09:21:34.489+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networki...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:34.589+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 98.8, "error_type": "http_error"}
+{"ts": "2026-09-28T09:21:34.589+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:21:34.589+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-28T09:21:34.591+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S3 instead of full page", "task_id": 4}
+{"ts": "2026-09-28T09:21:34.591+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:35.198+00:00", "tag": "VALIDATION", "message": "passed in 618 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 617.5}
+{"ts": "2026-09-28T09:21:35.198+00:00", "tag": "RESULT", "message": "S4: 19178 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-28T09:21:35.198+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://finance.yahoo.com/news/recent-developments-shaping-nvidia-investment-113602034.htm...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-28T09:21:36.124+00:00", "tag": "VALIDATION", "message": "passed in 924 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 923.7}
+{"ts": "2026-09-28T09:21:36.124+00:00", "tag": "RESULT", "message": "S5: 6586 chars extracted", "task_id": 4}
+{"ts": "2026-09-28T09:21:36.136+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 4 full pages, 1 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-28T09:21:36.136+00:00", "tag": "TASK 5", "message": "Compute comparable metrics from figures stated in sources", "task_id": 5}
+{"ts": "2026-09-28T09:21:36.142+00:00", "tag": "TASK 5", "message": "SKIPPED - no comparable numeric figures found in sources (nothing computed)", "task_id": 5, "status": "skipped"}
+{"ts": "2026-09-28T09:21:36.142+00:00", "tag": "TASK 6", "message": "Synthesize validated evidence into the final report", "task_id": 6}
+{"ts": "2026-09-28T09:21:36.142+00:00", "tag": "RESULT", "message": "heuristic competitor candidates: NVLink, Nvidia, Llama, Tensor Cores, June, Market Reality", "task_id": 6}
+{"ts": "2026-09-28T09:21:36.152+00:00", "tag": "TASK 6", "message": "COMPLETED - extractive: 6 competitors, 5 developments, 5 signals, 5 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-28T09:21:36.152+00:00", "tag": "RESULT", "message": "status=completed | tasks 5/6 | tool calls=8 | failures=1 | recoveries=1 | sources=5"}
+{"ts": "2026-09-28T09:21:36.168+00:00", "tag": "RESULT", "message": "Saved runs\\20260928-145114_show-report-compare-nvidia-and-amd-in-ai\\report.json, runs\\20260928-145114_show-report-compare-nvidia-and-amd-in-ai\\report.md"}

@@ -1,0 +1,27 @@
+{
+  "_notice": "Labelled test cases for the metric sanity check (metrics.is_well_formed). 'invalid' = the expression is not a meaningful calculation for its label/unit. Cases with origin 'live-run' reproduce the kind of mistake qwen3:8b made during real runs before the metric pipeline was redesigned; the rest are hand-written. Cases marked 'probe' look for blind spots.",
+  "cases": [
+    {"id": "m01", "label": "valid", "origin": "hand", "metric": {"label": "Voltaic revenue growth", "expression": "(18.4 - 10.2) / 10.2 * 100", "unit": "%"}},
+    {"id": "m02", "label": "valid", "origin": "hand", "metric": {"label": "Market CAGR 2025-2030", "expression": "((343 / 117) ** (1 / 5) - 1) * 100", "unit": "%"}},
+    {"id": "m03", "label": "valid", "origin": "hand", "metric": {"label": "AMD share of combined revenue", "expression": "5.4 / (5.4 + 30) * 100", "unit": "%"}},
+    {"id": "m04", "label": "valid", "origin": "hand", "metric": {"label": "AMD vs NVIDIA memory capacity ratio", "expression": "288 / 192", "unit": "x"}},
+    {"id": "m05", "label": "valid", "origin": "hand", "metric": {"label": "Gross margin change", "expression": "54 - 51", "unit": "pp"}},
+    {"id": "m06", "label": "valid", "origin": "hand", "metric": {"label": "Revenue difference", "expression": "30 - 5.4", "unit": "billion USD"}},
+    {"id": "m07", "label": "valid", "origin": "hand", "metric": {"label": "Combined revenue", "expression": "18.4 + 7.3", "unit": "billion USD"}},
+    {"id": "m08", "label": "valid", "origin": "live-run", "metric": {"label": "AMD vs NVIDIA: memory_capacity ratio", "expression": "256 / 128", "unit": "x"}},
+    {"id": "m09", "label": "valid", "origin": "hand", "metric": {"label": "Shipment growth", "expression": "(1.2 - 0.8) / 0.8 * 100", "unit": "%"}},
+    {"id": "m10", "label": "valid", "origin": "hand", "metric": {"label": "Price per GB", "expression": "30000 / 192", "unit": ""}},
+    {"id": "m11", "label": "invalid", "origin": "live-run", "metric": {"label": "NVIDIA market share", "expression": "80", "unit": "%"}},
+    {"id": "m12", "label": "invalid", "origin": "live-run", "metric": {"label": "Revenue change", "expression": "40 - 40", "unit": "billion USD"}},
+    {"id": "m13", "label": "invalid", "origin": "live-run", "metric": {"label": "Market CAGR", "expression": "(432 - 117) / 117 * 100", "unit": "%"}},
+    {"id": "m14", "label": "invalid", "origin": "live-run", "metric": {"label": "Memory ratio", "expression": "256 / 128", "unit": "GB"}},
+    {"id": "m15", "label": "invalid", "origin": "live-run", "metric": {"label": "Market share", "expression": "432 - 432 / (432 / 50)", "unit": "%"}},
+    {"id": "m16", "label": "invalid", "origin": "hand", "metric": {"label": "Share", "expression": "30 / 30", "unit": "%"}},
+    {"id": "m17", "label": "invalid", "origin": "hand", "metric": {"label": "Revenue growth", "expression": "(18.4 - 10.2) / 10.2", "unit": "%"}},
+    {"id": "m18", "label": "invalid", "origin": "hand", "metric": {"label": "Market size", "expression": "117 * 1", "unit": "billion USD"}},
+    {"id": "m19", "label": "invalid", "origin": "hand", "metric": {"label": "Share of market", "expression": "5.4 / (5.4 / 30) * 100", "unit": "%"}},
+    {"id": "p01", "label": "invalid", "origin": "probe", "metric": {"label": "AMD share of AI accelerator market", "expression": "5.4 / (5.4 + 30) * 100", "unit": "%"}, "why": "two-company share mislabelled as whole-market share (semantic error)"},
+    {"id": "p02", "label": "invalid", "origin": "probe", "metric": {"label": "Revenue growth", "expression": "(10.2 - 18.4) / 18.4 * 100", "unit": "%"}, "why": "old and new values swapped"},
+    {"id": "p03", "label": "invalid", "origin": "probe", "metric": {"label": "Revenue difference", "expression": "30 - 288", "unit": "billion USD"}, "why": "subtracts GB from USD (unit mix-up)"}
+  ]
+}

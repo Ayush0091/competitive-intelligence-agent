@@ -1,0 +1,72 @@
+{"ts": "2026-09-27T12:05:20.481+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T12:05:21.528+00:00", "tag": "AGENT", "message": "Goal received: \"Compare NVIDIA and AMD in AI accelerators\""}
+{"ts": "2026-09-27T12:05:21.528+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[tavily]"}
+{"ts": "2026-09-27T12:07:03.060+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 101.5s (1351 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T12:07:03.061+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T12:07:03.061+00:00", "tag": "TASK 1", "message": "Identify NVIDIA's AI accelerator offerings", "task_id": 1}
+{"ts": "2026-09-27T12:07:03.062+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"NVIDIA AI accelerators products\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:04.796+00:00", "tag": "VALIDATION", "message": "passed in 1734 ms", "task_id": 1, "tool": "web_search", "duration_ms": 1734.4}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 1, "results": 5}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "  - NVIDIA Data Center Products: Next Wave of AI Innovation | https://www.nvidia.com/en-us/data-center/products", "task_id": 1}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "  - Top 12 NVIDIA GPUs for AI Training & Inference in 2026 | https://www.atlantic.net/gpu-server-hosting/top-nvidia-gpus-for-ai-training-and-inference", "task_id": 1}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "  - AI Solutions for Enterprises | NVIDIA | https://www.nvidia.com/en-us/solutions/ai", "task_id": 1}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "  - Deep Learning Accelerator (DLA) | https://developer.nvidia.com/deep-learning-accelerator", "task_id": 1}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "RESULT", "message": "  - Alibaba wins China Unicom Deal for pingtouge AI accelerators | Nvidia Tech | Cry | https://cryptorank.io/news/feed/e7b95-alibaba-wins-china-unicom-client", "task_id": 1}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "TASK 2", "message": "Identify AMD's AI accelerator offerings", "task_id": 2}
+{"ts": "2026-09-27T12:07:04.798+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerators products\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:06.130+00:00", "tag": "VALIDATION", "message": "passed in 1329 ms", "task_id": 2, "tool": "web_search", "duration_ms": 1329.0}
+{"ts": "2026-09-27T12:07:06.132+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 2, "results": 5}
+{"ts": "2026-09-27T12:07:06.132+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI accelerators and networking solutions | https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networking-solutions-93CH-3481604", "task_id": 2}
+{"ts": "2026-09-27T12:07:06.133+00:00", "tag": "RESULT", "message": "  - AMD Delivers Leadership AI Performance with AMD Instinct MI325X Accelerators | https://finance.yahoo.com/news/amd-delivers-leadership-ai-performance-180000934.html", "task_id": 2}
+{"ts": "2026-09-27T12:07:06.133+00:00", "tag": "RESULT", "message": "  - Accelerating the Future With Ready AI Solutions | https://www.amd.com/en/partner/articles/ai-ready-solutions.html", "task_id": 2}
+{"ts": "2026-09-27T12:07:06.133+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI Infrastructure and accelerators | https://finance.yahoo.com/news/amd-introduces-ai-infrastructure-accelerators-091202747.html", "task_id": 2}
+{"ts": "2026-09-27T12:07:06.134+00:00", "tag": "RESULT", "message": "  - Accelerating Generative AI on AMD Radeon\u2122 GPUs | https://gpuopen.com/learn/accelerating_generative_ai_on_amd_radeon_gpus", "task_id": 2}
+{"ts": "2026-09-27T12:07:06.134+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-27T12:07:06.134+00:00", "tag": "TASK 3", "message": "Find recent news on NVIDIA and AMD in AI accelerators", "task_id": 3}
+{"ts": "2026-09-27T12:07:06.136+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"NVIDIA AMD AI accelerators news 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:08.259+00:00", "tag": "VALIDATION", "message": "passed in 2124 ms", "task_id": 3, "tool": "web_search", "duration_ms": 2123.5}
+{"ts": "2026-09-27T12:07:08.259+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 3, "results": 5}
+{"ts": "2026-09-27T12:07:08.260+00:00", "tag": "RESULT", "message": "  - AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200 | https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026", "task_id": 3}
+{"ts": "2026-09-27T12:07:08.260+00:00", "tag": "RESULT", "message": "  - AI Chip Stocks August 2026: Nvidia vs AMD Investment ... | https://intellectia.ai/blog/ai-chip-stocks-august-2026", "task_id": 3}
+{"ts": "2026-09-27T12:07:08.260+00:00", "tag": "RESULT", "message": "  - NVIDIA AI Accelerator Market Position: Q1 2026 Snapshot \u2014 Celadon Research | https://celadonresearch.com/research/nvidia-ai-accelerators-q1-2026", "task_id": 3}
+{"ts": "2026-09-27T12:07:08.260+00:00", "tag": "RESULT", "message": "  - menu | https://intellectia.ai/blog/ai-chip-stocks-nvidia-amd-analysis-2026", "task_id": 3}
+{"ts": "2026-09-27T12:07:08.260+00:00", "tag": "RESULT", "message": "  - menu | https://intellectia.ai/blog/ai-semiconductor-stocks-july-2026", "task_id": 3}
+{"ts": "2026-09-27T12:07:08.262+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-27T12:07:08.262+00:00", "tag": "TASK 4", "message": "Read the most relevant sources", "task_id": 4}
+{"ts": "2026-09-27T12:07:08.263+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.nvidia.com/en-us/data-center/products\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:10.355+00:00", "tag": "VALIDATION", "message": "passed in 2092 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 2091.8}
+{"ts": "2026-09-27T12:07:10.356+00:00", "tag": "RESULT", "message": "S1: 7735 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T12:07:10.356+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networki...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:10.524+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 168.6, "error_type": "http_error"}
+{"ts": "2026-09-27T12:07:10.527+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T12:07:10.527+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T12:07:10.527+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S2 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T12:07:10.527+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:11.183+00:00", "tag": "VALIDATION", "message": "passed in 655 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 655.0}
+{"ts": "2026-09-27T12:07:11.183+00:00", "tag": "RESULT", "message": "S3: 19178 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T12:07:11.184+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.atlantic.net/gpu-server-hosting/top-nvidia-gpus-for-ai-training-and-inference\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:12.101+00:00", "tag": "VALIDATION", "message": "passed in 915 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 915.2}
+{"ts": "2026-09-27T12:07:12.102+00:00", "tag": "RESULT", "message": "S4: 41419 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T12:07:12.102+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://finance.yahoo.com/news/amd-delivers-leadership-ai-performance-180000934.html\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:12.833+00:00", "tag": "VALIDATION", "message": "passed in 729 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 729.2}
+{"ts": "2026-09-27T12:07:12.833+00:00", "tag": "RESULT", "message": "S5: 19499 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T12:07:12.833+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://intellectia.ai/blog/ai-chip-stocks-august-2026\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:07:14.727+00:00", "tag": "VALIDATION", "message": "passed in 1894 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1893.6}
+{"ts": "2026-09-27T12:07:14.729+00:00", "tag": "RESULT", "message": "S6: 18896 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T12:07:14.729+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 5 full pages, 1 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T12:07:14.729+00:00", "tag": "TASK 5", "message": "Compute comparable metrics", "task_id": 5}
+{"ts": "2026-09-27T12:11:06.039+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 231.3s (2402 chars) - You extract quantitative FACTS from numbered sources for a c"}
+{"ts": "2026-09-27T12:11:06.043+00:00", "tag": "VALIDATION", "message": "LLM extracted 15 figure(s), 15 grounded in their sources", "task_id": 5}
+{"ts": "2026-09-27T12:11:06.044+00:00", "tag": "TOOL", "message": "calculator expression=\"7 / (193.7 + 7) * 100\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:11:06.044+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.2}
+{"ts": "2026-09-27T12:11:06.044+00:00", "tag": "RESULT", "message": "AMD: share of combined data-center revenue FY2026 among 2 companies found (not total market) = 3.49%", "task_id": 5}
+{"ts": "2026-09-27T12:11:06.044+00:00", "tag": "TOOL", "message": "calculator expression=\"256 / 192\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T12:11:06.044+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.0}
+{"ts": "2026-09-27T12:11:06.045+00:00", "tag": "RESULT", "message": "AMD vs NVIDIA: memory capacity ratio = 1.33x", "task_id": 5}
+{"ts": "2026-09-27T12:11:06.045+00:00", "tag": "TASK 5", "message": "COMPLETED - 2/2 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-27T12:11:06.045+00:00", "tag": "TASK 6", "message": "Write the competitive brief", "task_id": 6}
+{"ts": "2026-09-27T12:14:12.968+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 186.9s (2097 chars) - You are the reporting module of a competitive-intelligence a"}
+{"ts": "2026-09-27T12:14:12.970+00:00", "tag": "TASK 6", "message": "COMPLETED - llm: 2 competitors, 2 developments, 2 signals, 2 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-27T12:14:12.970+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=11 | failures=1 | recoveries=1 | sources=6"}
+{"ts": "2026-09-27T12:14:12.975+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-173518_compare-nvidia-and-amd-in-ai-accelerator\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-173518_compare-nvidia-and-amd-in-ai-accelerator\\report.md"}

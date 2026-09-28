@@ -1,0 +1,72 @@
+{"ts": "2026-09-27T11:37:44.702+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T11:37:45.829+00:00", "tag": "AGENT", "message": "Goal received: \"Compare NVIDIA and AMD in AI accelerators\""}
+{"ts": "2026-09-27T11:37:45.830+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[tavily]"}
+{"ts": "2026-09-27T11:39:26.391+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 100.6s (1351 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T11:39:26.395+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T11:39:26.395+00:00", "tag": "TASK 1", "message": "Identify NVIDIA's AI accelerator offerings", "task_id": 1}
+{"ts": "2026-09-27T11:39:26.395+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"NVIDIA AI accelerators products\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:28.498+00:00", "tag": "VALIDATION", "message": "passed in 2102 ms", "task_id": 1, "tool": "web_search", "duration_ms": 2102.1}
+{"ts": "2026-09-27T11:39:28.498+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 1, "results": 5}
+{"ts": "2026-09-27T11:39:28.499+00:00", "tag": "RESULT", "message": "  - NVIDIA Data Center Products: Next Wave of AI Innovation | https://www.nvidia.com/en-us/data-center/products", "task_id": 1}
+{"ts": "2026-09-27T11:39:28.499+00:00", "tag": "RESULT", "message": "  - Top 12 NVIDIA GPUs for AI Training & Inference in 2026 | https://www.atlantic.net/gpu-server-hosting/top-nvidia-gpus-for-ai-training-and-inference", "task_id": 1}
+{"ts": "2026-09-27T11:39:28.499+00:00", "tag": "RESULT", "message": "  - AI Solutions for Enterprises | NVIDIA | https://www.nvidia.com/en-us/solutions/ai", "task_id": 1}
+{"ts": "2026-09-27T11:39:28.499+00:00", "tag": "RESULT", "message": "  - Deep Learning Accelerator (DLA) | https://developer.nvidia.com/deep-learning-accelerator", "task_id": 1}
+{"ts": "2026-09-27T11:39:28.500+00:00", "tag": "RESULT", "message": "  - Data Centers Built for Advanced AI Reasoning | NVIDIA | https://www.nvidia.com/en-us/data-center/products/converged-accelerator", "task_id": 1}
+{"ts": "2026-09-27T11:39:28.500+00:00", "tag": "TASK 1", "message": "COMPLETED - 5 results via first_try", "task_id": 1, "status": "completed"}
+{"ts": "2026-09-27T11:39:28.500+00:00", "tag": "TASK 2", "message": "Identify AMD's AI accelerator offerings", "task_id": 2}
+{"ts": "2026-09-27T11:39:28.501+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerators products\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:30.208+00:00", "tag": "VALIDATION", "message": "passed in 1707 ms", "task_id": 2, "tool": "web_search", "duration_ms": 1706.6}
+{"ts": "2026-09-27T11:39:30.208+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 2, "results": 5}
+{"ts": "2026-09-27T11:39:30.208+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI accelerators and networking solutions | https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networking-solutions-93CH-3481604", "task_id": 2}
+{"ts": "2026-09-27T11:39:30.209+00:00", "tag": "RESULT", "message": "  - AMD Delivers Leadership AI Performance with AMD Instinct MI325X Accelerators | https://finance.yahoo.com/news/amd-delivers-leadership-ai-performance-180000934.html", "task_id": 2}
+{"ts": "2026-09-27T11:39:30.209+00:00", "tag": "RESULT", "message": "  - Accelerating the Future With Ready AI Solutions | https://www.amd.com/en/partner/articles/ai-ready-solutions.html", "task_id": 2}
+{"ts": "2026-09-27T11:39:30.209+00:00", "tag": "RESULT", "message": "  - AMD introduces new AI Infrastructure and accelerators | https://finance.yahoo.com/news/amd-introduces-ai-infrastructure-accelerators-091202747.html", "task_id": 2}
+{"ts": "2026-09-27T11:39:30.209+00:00", "tag": "RESULT", "message": "  - Accelerating Generative AI on AMD Radeon\u2122 GPUs | https://gpuopen.com/learn/accelerating_generative_ai_on_amd_radeon_gpus", "task_id": 2}
+{"ts": "2026-09-27T11:39:30.209+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-27T11:39:30.210+00:00", "tag": "TASK 3", "message": "Find recent news on NVIDIA and AMD in AI accelerators", "task_id": 3}
+{"ts": "2026-09-27T11:39:30.210+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"NVIDIA AMD AI accelerators news 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:31.699+00:00", "tag": "VALIDATION", "message": "passed in 1488 ms", "task_id": 3, "tool": "web_search", "duration_ms": 1488.1}
+{"ts": "2026-09-27T11:39:31.699+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 3, "results": 5}
+{"ts": "2026-09-27T11:39:31.699+00:00", "tag": "RESULT", "message": "  - AMD's next-generation AI chips set to power 2026 data ... | https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth", "task_id": 3}
+{"ts": "2026-09-27T11:39:31.700+00:00", "tag": "RESULT", "message": "  - AMD AI Chip Challenge Turns the Nvidia Rivalry Into a System War - Memeburn | https://memeburn.com/amd-ai-chip-turns-nvidia-rivalry-into-a-system-war", "task_id": 3}
+{"ts": "2026-09-27T11:39:31.700+00:00", "tag": "RESULT", "message": "  - AMD showcased its roadmap for AI hardware at CES 2026 ... | https://www.instagram.com/p/DTQXWIUDNgD", "task_id": 3}
+{"ts": "2026-09-27T11:39:31.700+00:00", "tag": "RESULT", "message": "  - AMD\u2019s MI350: The AI Accelerator That Could Challenge Nvidia\u2019s Dominance In 2026  | https://seekingalpha.com/article/4856532-amds-mi350-ai-accelerator-that-could-challenge-nvidias-dominance-in-2026", "task_id": 3}
+{"ts": "2026-09-27T11:39:31.700+00:00", "tag": "RESULT", "message": "  - AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 3}
+{"ts": "2026-09-27T11:39:31.701+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-27T11:39:31.701+00:00", "tag": "TASK 4", "message": "Read the most relevant sources", "task_id": 4}
+{"ts": "2026-09-27T11:39:31.701+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.nvidia.com/en-us/data-center/products\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:32.106+00:00", "tag": "VALIDATION", "message": "passed in 408 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 408.2}
+{"ts": "2026-09-27T11:39:32.106+00:00", "tag": "RESULT", "message": "S1: 7735 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T11:39:32.106+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://au.investing.com/news/company-news/amd-introduces-new-ai-accelerators-and-networki...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:32.266+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 155.0, "error_type": "http_error"}
+{"ts": "2026-09-27T11:39:32.266+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:39:32.266+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:39:32.266+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S2 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T11:39:32.266+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:32.439+00:00", "tag": "ERROR", "message": "HTTP 403 Forbidden [http_error]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 174.2, "error_type": "http_error"}
+{"ts": "2026-09-27T11:39:32.439+00:00", "tag": "RECOVERY", "message": "Error is not retryable; skipping retries", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:39:32.439+00:00", "tag": "RECOVERY", "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:39:32.439+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S3 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T11:39:32.439+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.atlantic.net/gpu-server-hosting/top-nvidia-gpus-for-ai-training-and-inference\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:33.461+00:00", "tag": "VALIDATION", "message": "passed in 1017 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1017.1}
+{"ts": "2026-09-27T11:39:33.461+00:00", "tag": "RESULT", "message": "S4: 41419 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:39:33.461+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://finance.yahoo.com/news/amd-delivers-leadership-ai-performance-180000934.html\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:34.220+00:00", "tag": "VALIDATION", "message": "passed in 758 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 758.2}
+{"ts": "2026-09-27T11:39:34.221+00:00", "tag": "RESULT", "message": "S5: 19308 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:39:34.221+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://memeburn.com/amd-ai-chip-turns-nvidia-rivalry-into-a-system-war\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:39:35.689+00:00", "tag": "VALIDATION", "message": "passed in 1467 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1467.4}
+{"ts": "2026-09-27T11:39:35.690+00:00", "tag": "RESULT", "message": "S6: 12736 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:39:35.690+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 4 full pages, 2 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T11:39:35.690+00:00", "tag": "TASK 5", "message": "Compute comparable metrics", "task_id": 5}
+{"ts": "2026-09-27T11:43:20.727+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 225.0s (2366 chars) - You extract quantitative FACTS from numbered sources for a c"}
+{"ts": "2026-09-27T11:43:20.732+00:00", "tag": "VALIDATION", "message": "LLM extracted 15 figure(s), 15 grounded in their sources", "task_id": 5}
+{"ts": "2026-09-27T11:43:20.732+00:00", "tag": "TOOL", "message": "calculator expression=\"256 / (128 + 256) * 100\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:43:20.733+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T11:43:20.733+00:00", "tag": "RESULT", "message": "AMD: share of combined memory_capacity among 2 companies found (not total market) = 66.67%", "task_id": 5}
+{"ts": "2026-09-27T11:43:20.733+00:00", "tag": "TASK 5", "message": "COMPLETED - 1/1 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-27T11:43:20.733+00:00", "tag": "TASK 6", "message": "Write the competitive brief", "task_id": 6}
+{"ts": "2026-09-27T11:46:17.093+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 176.4s (2118 chars) - You are the reporting module of a competitive-intelligence a"}
+{"ts": "2026-09-27T11:46:17.095+00:00", "tag": "VALIDATION", "message": "'fact' relabelled as inference - figure(s) ['200'] not in cited source(s): AMD's Instinct MI325X accelerators offer 256GB of HBM3E memo", "task_id": 6}
+{"ts": "2026-09-27T11:46:17.096+00:00", "tag": "TASK 6", "message": "COMPLETED - llm: 2 competitors, 2 developments, 2 signals, 2 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-27T11:46:17.096+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=10 | failures=2 | recoveries=2 | sources=6"}
+{"ts": "2026-09-27T11:46:17.105+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-170742_compare-nvidia-and-amd-in-ai-accelerator\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-170742_compare-nvidia-and-amd-in-ai-accelerator\\report.md"}

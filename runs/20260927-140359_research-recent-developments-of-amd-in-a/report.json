@@ -1,0 +1,266 @@
+{
+  "goal": "Research recent developments of AMD in AI accelerators",
+  "status": "failed",
+  "data_mode": "live",
+  "planner": "llm",
+  "llm": "ollama:qwen3:8b",
+  "tasks_total": 5,
+  "tasks_completed": 0,
+  "tasks_failed": 5,
+  "tools_used": [
+    "web_search"
+  ],
+  "failures": 10,
+  "recoveries": 0,
+  "sources_analyzed": 0,
+  "report": {
+    "target_company": "AMD",
+    "executive_summary": "No report could be produced: no validated sources were obtained. See the execution summary for the failures encountered.",
+    "competitors": [],
+    "recent_developments": [],
+    "market_signals": [],
+    "risks": [],
+    "synthesis_method": "none"
+  },
+  "metrics": [],
+  "sources": [],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Search for recent AMD AI accelerator news",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 2,
+      "description": "Search for AMD AI accelerator product launches",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 3,
+      "description": "Search for AMD AI accelerator partnerships",
+      "tool": "web_search",
+      "status": "failed",
+      "note": "search failed after retries/fallbacks/re-plan"
+    },
+    {
+      "id": 4,
+      "description": "Fetch top sources for AMD AI accelerator news",
+      "tool": "url_fetcher",
+      "status": "failed",
+      "note": "no search results available to fetch"
+    },
+    {
+      "id": 5,
+      "description": "Synthesize key developments from sources",
+      "tool": "synthesize",
+      "status": "failed",
+      "note": "no validated sources; cannot synthesize"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: invalid tool response: missing \"results\" [malformed_response]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "gave_up",
+      "message": "Giving up after 3 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 1,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 2,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "failure",
+      "message": "web_search: HTTP 403 Forbidden [http_error]",
+      "tool": "web_search"
+    },
+    {
+      "task_id": 3,
+      "kind": "gave_up",
+      "message": "Giving up after 1 attempt(s): HTTP 403 Forbidden",
+      "tool": "web_search"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator recent developments\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.1,
+      "error": "invalid tool response: missing \"results\"",
+      "role": "primary"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator recent developments\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 284.6,
+      "error": "HTTP 403 Forbidden",
+      "role": "retry"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD accelerator\"",
+      "attempt": 3,
+      "success": false,
+      "duration_ms": 79.1,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI chip advancements 2024\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 312.7,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator product launches 2026\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 93.5,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD accelerator product\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 96.8,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI chip developments 2025\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 323.4,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator partnerships 2026\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 99.6,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD accelerator partnerships\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 98.4,
+      "error": "HTTP 403 Forbidden",
+      "role": "fallback"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"AMD AI accelerator collaborations\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 327.2,
+      "error": "HTTP 403 Forbidden",
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-27T14:04:03",
+  "duration_s": 109.83
+}

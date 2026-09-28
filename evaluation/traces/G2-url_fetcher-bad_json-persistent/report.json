@@ -1,0 +1,432 @@
+{
+  "goal": "Compare Voltaic Semiconductors and Nimbus Compute in AI accelerators",
+  "status": "completed",
+  "data_mode": "offline_synthetic",
+  "planner": "template",
+  "llm": "none",
+  "tasks_total": 6,
+  "tasks_completed": 6,
+  "tasks_failed": 0,
+  "tools_used": [
+    "calculator",
+    "url_fetcher",
+    "web_search"
+  ],
+  "failures": 10,
+  "recoveries": 5,
+  "sources_analyzed": 5,
+  "report": {
+    "target_company": "Voltaic Semiconductors, Nimbus Compute",
+    "executive_summary": "Evidence base: 5 sources (0 full pages, 5 snippet-only) about Voltaic Semiconductors, Nimbus Compute (market: AI accelerators). Companies/alternatives appearing in competitive contexts: Nimbus Compute. Collected 2 development, 2 competitive-signal and 0 risk statements. Example computed metric: Voltaic Semiconductors: revenue growth vs prior period = 80.4%. (Auto-generated overview without an LLM; see cited statements below.)",
+    "competitors": [
+      {
+        "name": "Nimbus Compute",
+        "summary": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+        "source_ids": [
+          1,
+          4
+        ],
+        "kind": "fact"
+      }
+    ],
+    "recent_developments": [
+      {
+        "text": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+        "source_ids": [
+          1
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic Semiconductors announced a partnership with Orbital Networks to build sovereign AI data centers in three countries.",
+        "source_ids": [
+          3
+        ],
+        "kind": "fact"
+      }
+    ],
+    "market_signals": [
+      {
+        "text": "Independent benchmarks published this month compare Voltaic's Arc 4 with the Nimbus Compute MX3 on training and inference tasks.",
+        "source_ids": [
+          4
+        ],
+        "kind": "fact"
+      },
+      {
+        "text": "Voltaic Semiconductors reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "source_ids": [
+          5
+        ],
+        "kind": "fact"
+      }
+    ],
+    "risks": [],
+    "synthesis_method": "extractive (no LLM): findings are sentences quoted from sources; competitor list is heuristic"
+  },
+  "metrics": [
+    {
+      "label": "Voltaic Semiconductors: revenue growth vs prior period",
+      "expression": "(18.4 - 10.2) / 10.2 * 100",
+      "value": 80.3921568627451,
+      "unit": "%",
+      "source_ids": [
+        5
+      ],
+      "status": "ok",
+      "error": null
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://synthetic.example/nimbus-mx3-launch",
+      "title": "[SYNTHETIC] Nimbus Compute unveils MX3 accelerator to challenge Voltaic",
+      "snippet": "Nimbus Compute unveiled its MX3 accelerator, positioning the chip as a lower-cost alternative to Voltaic's Arc line for large-model training.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 2,
+      "url": "https://synthetic.example/ai-accelerator-market-overview",
+      "title": "[SYNTHETIC] AI accelerator market overview: Voltaic leads, rivals close in",
+      "snippet": "Meridian Research estimates the AI accelerator market reached $61 billion in 2025.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 3,
+      "url": "https://synthetic.example/voltaic-orbital-partnership",
+      "title": "[SYNTHETIC] Voltaic announces sovereign AI data-center partnership with Orbital Networks",
+      "snippet": "Voltaic Semiconductors announced a partnership with Orbital Networks to build sovereign AI data centers in three countries.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 4,
+      "url": "https://synthetic.example/voltaic-vs-nimbus-benchmarks",
+      "title": "[SYNTHETIC] Voltaic vs Nimbus Compute: benchmark comparison of Arc 4 and MX3",
+      "snippet": "Independent benchmarks published this month compare Voltaic's Arc 4 with the Nimbus Compute MX3 on training and inference tasks.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    },
+    {
+      "id": 5,
+      "url": "https://synthetic.example/voltaic-fy2025-results",
+      "title": "[SYNTHETIC] Voltaic Semiconductors posts record data-center revenue",
+      "snippet": "Voltaic Semiconductors reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+      "retrieval": "snippet_only",
+      "origin_task": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Find head-to-head comparisons of Voltaic Semiconductors and Nimbus Compute",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 2,
+      "description": "Research recent developments for Voltaic Semiconductors",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 3,
+      "description": "Research recent developments for Nimbus Compute",
+      "tool": "web_search",
+      "status": "completed",
+      "note": "5 results via first_try"
+    },
+    {
+      "id": 4,
+      "description": "Retrieve and read the most relevant public sources",
+      "tool": "url_fetcher",
+      "status": "completed_with_recovery",
+      "note": "0 full pages, 5 snippet fallbacks, 0 skipped"
+    },
+    {
+      "id": 5,
+      "description": "Compute comparable metrics from figures stated in sources",
+      "tool": "calculator",
+      "status": "completed",
+      "note": "1/1 metrics computed"
+    },
+    {
+      "id": 6,
+      "description": "Synthesize validated evidence into the final report",
+      "tool": "synthesize",
+      "status": "completed",
+      "note": "extractive: 1 competitors, 2 developments, 2 signals, 0 risks"
+    }
+  ],
+  "events": [
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): malformed JSON response (Expecting value: line 1 column 1)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S1 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): malformed JSON response (Expecting value: line 1 column 1)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S2 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): malformed JSON response (Expecting value: line 1 column 1)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S3 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): malformed JSON response (Expecting value: line 1 column 1)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S4 instead of full page",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "failure",
+      "message": "url_fetcher: malformed JSON response (Expecting value: line 1 column 1) [malformed_response]",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "gave_up",
+      "message": "Giving up after 2 attempt(s): malformed JSON response (Expecting value: line 1 column 1)",
+      "tool": "url_fetcher"
+    },
+    {
+      "task_id": 4,
+      "kind": "fallback",
+      "message": "Degraded gracefully: using search snippet for S5 instead of full page",
+      "tool": "url_fetcher"
+    }
+  ],
+  "tool_calls": [
+    {
+      "task_id": 1,
+      "tool": "web_search",
+      "input_summary": "query=\"Voltaic Semiconductors vs Nimbus Compute AI accelerators\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.5,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 2,
+      "tool": "web_search",
+      "input_summary": "query=\"Voltaic Semiconductors AI accelerators recent developments\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 3,
+      "tool": "web_search",
+      "input_summary": "query=\"Nimbus Compute AI accelerators recent developments\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.4,
+      "error": null,
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/nimbus-mx3-launch\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/nimbus-mx3-launch\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "retry"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/ai-accelerator-market-overview\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/ai-accelerator-market-overview\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "retry"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-orbital-partnership\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-orbital-partnership\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "retry"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-vs-nimbus-benchmarks\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "retry"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-fy2025-results\"",
+      "attempt": 1,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "primary"
+    },
+    {
+      "task_id": 4,
+      "tool": "url_fetcher",
+      "input_summary": "url=\"https://synthetic.example/voltaic-fy2025-results\"",
+      "attempt": 2,
+      "success": false,
+      "duration_ms": 0.0,
+      "error": "malformed JSON response (Expecting value: line 1 column 1)",
+      "role": "retry"
+    },
+    {
+      "task_id": 5,
+      "tool": "calculator",
+      "input_summary": "expression=\"(18.4 - 10.2) / 10.2 * 100\"",
+      "attempt": 1,
+      "success": true,
+      "duration_ms": 0.0,
+      "error": null,
+      "role": "primary"
+    }
+  ],
+  "started_at": "2026-09-28T14:54:02",
+  "duration_s": 0.01
+}

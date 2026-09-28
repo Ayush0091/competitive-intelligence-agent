@@ -1,0 +1,32 @@
+{
+  "_notice": "Hand-written labelled test cases for the numeric-grounding guard (validator.ungrounded_numbers). Sources are short fictional or paraphrased snippets. Label rule: 'hallucinated' = the claim states a figure that the source does not state with the same meaning; 'grounded' = every figure in the claim is stated in the source with the same meaning. Cases marked 'probe' were written on purpose to find the guard's blind spots.",
+  "cases": [
+    {"id": "g01", "label": "grounded", "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.", "claim": "Voltaic's data-center revenue reached $18.4 billion in FY2025."},
+    {"id": "g02", "label": "grounded", "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.", "claim": "Revenue grew from $10.2B to $18.4B year over year."},
+    {"id": "g03", "label": "hallucinated", "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.", "claim": "Voltaic's data-center revenue reached $19.1 billion in FY2025."},
+    {"id": "g04", "label": "hallucinated", "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.", "claim": "Revenue grew 80% year over year to $18.4 billion."},
+    {"id": "g05", "label": "grounded", "source": "Analysts estimate the AI accelerator market at $117 billion in 2025, growing at a 24% CAGR through 2030.", "claim": "The market is expected to grow at a 24% CAGR."},
+    {"id": "g06", "label": "hallucinated", "source": "Analysts estimate the AI accelerator market at $117 billion in 2025, growing at a 24% CAGR through 2030.", "claim": "The market is expected to reach $343 billion by 2030."},
+    {"id": "g07", "label": "grounded", "source": "The MI355X ships with 288 GB of HBM3E memory, compared with 192 GB on the B200.", "claim": "MI355X offers 288 GB of HBM3E versus 192 GB on B200."},
+    {"id": "g08", "label": "hallucinated", "source": "The MI355X ships with 288 GB of HBM3E memory, compared with 192 GB on the B200.", "claim": "MI355X offers 256 GB of HBM3E memory."},
+    {"id": "g09", "label": "grounded", "source": "NVIDIA holds roughly 80% of the AI accelerator market, according to the report.", "claim": "NVIDIA controls about 80% of AI accelerator sales."},
+    {"id": "g10", "label": "hallucinated", "source": "NVIDIA holds roughly 80% of the AI accelerator market, according to the report.", "claim": "NVIDIA controls about 92% of AI accelerator sales."},
+    {"id": "g11", "label": "grounded", "source": "The company employs 26,000 people across 30 countries.", "claim": "It has 26000 employees."},
+    {"id": "g12", "label": "grounded", "source": "Nimbus Compute signed a multi-year supply agreement with Orbital Cloud in 2025.", "claim": "Nimbus signed a supply deal with Orbital Cloud in 2025."},
+    {"id": "g13", "label": "hallucinated", "source": "Nimbus Compute signed a multi-year supply agreement with Orbital Cloud in 2025.", "claim": "Nimbus signed a 5-year, $12 billion supply deal with Orbital Cloud."},
+    {"id": "g14", "label": "grounded", "source": "Helios racks were priced at about $5.25 million each.", "claim": "A Helios rack costs roughly $5.25M."},
+    {"id": "g15", "label": "hallucinated", "source": "Helios racks were priced at about $5.25 million each.", "claim": "A Helios rack costs roughly $5.5M."},
+    {"id": "g16", "label": "grounded", "source": "OpenAI and AMD agreed to deploy 6 gigawatts of AMD GPUs, starting with 1 gigawatt in 2026.", "claim": "The partnership covers 6 gigawatts of GPUs."},
+    {"id": "g17", "label": "hallucinated", "source": "Quarterly revenue was $7.7 billion, while gross margin was 54%.", "claim": "Gross margin was 57% in the quarter."},
+    {"id": "g18", "label": "grounded", "source": "Quarterly revenue was $7.7 billion, while gross margin was 54%.", "claim": "Revenue of $7.7 billion came with a 54% gross margin."},
+    {"id": "g19", "label": "hallucinated", "source": "Shipments rose to 1.2 million units in 2025.", "claim": "Shipments rose to 1.5 million units in 2025."},
+    {"id": "g20", "label": "hallucinated", "source": "The startup raised $640 million in its Series D round.", "claim": "The startup raised $460 million in its Series D round."},
+    {"id": "p01", "label": "grounded", "probe": "unit conversion", "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025.", "claim": "Voltaic's data-center revenue was $18,400 million."},
+    {"id": "p02", "label": "grounded", "probe": "rounding", "source": "The AI accelerator market was valued at $431.67 billion.", "claim": "The market is worth about $431.7 billion."},
+    {"id": "p03", "label": "hallucinated", "probe": "misattributed figure", "source": "AMD's data-center revenue was $5.4 billion, while NVIDIA's was $30 billion.", "claim": "NVIDIA's data-center revenue was $5.4 billion."},
+    {"id": "p04", "label": "hallucinated", "probe": "wrong period", "source": "Revenue was $10.2 billion in fiscal 2024 and $18.4 billion in fiscal 2025.", "claim": "Revenue was $10.2 billion in fiscal 2025."},
+    {"id": "p05", "label": "hallucinated", "probe": "single-digit figure", "source": "The company operates three fabs in Asia.", "claim": "The company operates 7 fabs in Asia."},
+    {"id": "p06", "label": "grounded", "probe": "number written as a word", "source": "Analysts expect twelve new accelerator launches this year.", "claim": "Analysts expect 12 new accelerator launches this year."},
+    {"id": "p07", "label": "hallucinated", "probe": "invented year", "source": "The MI400 series is expected to launch next year.", "claim": "The MI400 series launches in 2027."}
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "faults": {
+    "runs": 111,
+    "tool_calls": 1563,
+    "detection": {
+      "tp": 453,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1110,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "detection_by_fault": {
+      "injected:bad_json": {
+        "detected": 81,
+        "total": 81
+      },
+      "injected:crash": {
+        "detected": 81,
+        "total": 81
+      },
+      "injected:empty": {
+        "detected": 60,
+        "total": 60
+      },
+      "injected:http_error": {
+        "detected": 81,
+        "total": 81
+      },
+      "injected:malformed": {
+        "detected": 69,
+        "total": 69
+      },
+      "injected:timeout": {
+        "detected": 81,
+        "total": 81
+      }
+    },
+    "faulted_runs": 108,
+    "recovered_runs": 90,
+    "completed_runs": 93,
+    "crashed_runs": 0,
+    "clean_runs": 3,
+    "clean_runs_completed": 3,
+    "not_triggered": [],
+    "unrecovered": [
+      "G1-calculator-malformed-persistent",
+      "G1-calculator-empty-persistent",
+      "G1-calculator-timeout-persistent",
+      "G1-calculator-http_error-persistent",
+      "G1-calculator-bad_json-persistent",
+      "G1-calculator-crash-persistent",
+      "G2-calculator-malformed-persistent",
+      "G2-calculator-empty-persistent",
+      "G2-calculator-timeout-persistent",
+      "G2-calculator-http_error-persistent",
+      "G2-calculator-bad_json-persistent",
+      "G2-calculator-crash-persistent",
+      "G3-calculator-malformed-persistent",
+      "G3-calculator-empty-persistent",
+      "G3-calculator-timeout-persistent",
+      "G3-calculator-http_error-persistent",
+      "G3-calculator-bad_json-persistent",
+      "G3-calculator-crash-persistent"
+    ]
+  },
+  "grounding": {
+    "all": {
+      "tp": 10,
+      "fp": 3,
+      "fn": 4,
+      "tn": 10,
+      "precision": 0.7692307692307693,
+      "recall": 0.7142857142857143,
+      "f1": 0.7407407407407408
+    },
+    "core": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "tn": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "n": 27,
+    "n_core": 20,
+    "rows": [
+      {
+        "id": "g01",
+        "label": "grounded",
+        "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "claim": "Voltaic's data-center revenue reached $18.4 billion in FY2025.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g02",
+        "label": "grounded",
+        "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "claim": "Revenue grew from $10.2B to $18.4B year over year.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g03",
+        "label": "hallucinated",
+        "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "claim": "Voltaic's data-center revenue reached $19.1 billion in FY2025.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "19.1"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g04",
+        "label": "hallucinated",
+        "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025, up from $10.2 billion in fiscal 2024.",
+        "claim": "Revenue grew 80% year over year to $18.4 billion.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "80"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g05",
+        "label": "grounded",
+        "source": "Analysts estimate the AI accelerator market at $117 billion in 2025, growing at a 24% CAGR through 2030.",
+        "claim": "The market is expected to grow at a 24% CAGR.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g06",
+        "label": "hallucinated",
+        "source": "Analysts estimate the AI accelerator market at $117 billion in 2025, growing at a 24% CAGR through 2030.",
+        "claim": "The market is expected to reach $343 billion by 2030.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "343"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g07",
+        "label": "grounded",
+        "source": "The MI355X ships with 288 GB of HBM3E memory, compared with 192 GB on the B200.",
+        "claim": "MI355X offers 288 GB of HBM3E versus 192 GB on B200.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g08",
+        "label": "hallucinated",
+        "source": "The MI355X ships with 288 GB of HBM3E memory, compared with 192 GB on the B200.",
+        "claim": "MI355X offers 256 GB of HBM3E memory.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "256"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g09",
+        "label": "grounded",
+        "source": "NVIDIA holds roughly 80% of the AI accelerator market, according to the report.",
+        "claim": "NVIDIA controls about 80% of AI accelerator sales.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g10",
+        "label": "hallucinated",
+        "source": "NVIDIA holds roughly 80% of the AI accelerator market, according to the report.",
+        "claim": "NVIDIA controls about 92% of AI accelerator sales.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "92"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g11",
+        "label": "grounded",
+        "source": "The company employs 26,000 people across 30 countries.",
+        "claim": "It has 26000 employees.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g12",
+        "label": "grounded",
+        "source": "Nimbus Compute signed a multi-year supply agreement with Orbital Cloud in 2025.",
+        "claim": "Nimbus signed a supply deal with Orbital Cloud in 2025.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g13",
+        "label": "hallucinated",
+        "source": "Nimbus Compute signed a multi-year supply agreement with Orbital Cloud in 2025.",
+        "claim": "Nimbus signed a 5-year, $12 billion supply deal with Orbital Cloud.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "12"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g14",
+        "label": "grounded",
+        "source": "Helios racks were priced at about $5.25 million each.",
+        "claim": "A Helios rack costs roughly $5.25M.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g15",
+        "label": "hallucinated",
+        "source": "Helios racks were priced at about $5.25 million each.",
+        "claim": "A Helios rack costs roughly $5.5M.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "5.5"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g16",
+        "label": "grounded",
+        "source": "OpenAI and AMD agreed to deploy 6 gigawatts of AMD GPUs, starting with 1 gigawatt in 2026.",
+        "claim": "The partnership covers 6 gigawatts of GPUs.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g17",
+        "label": "hallucinated",
+        "source": "Quarterly revenue was $7.7 billion, while gross margin was 54%.",
+        "claim": "Gross margin was 57% in the quarter.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "57"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g18",
+        "label": "grounded",
+        "source": "Quarterly revenue was $7.7 billion, while gross margin was 54%.",
+        "claim": "Revenue of $7.7 billion came with a 54% gross margin.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": true
+      },
+      {
+        "id": "g19",
+        "label": "hallucinated",
+        "source": "Shipments rose to 1.2 million units in 2025.",
+        "claim": "Shipments rose to 1.5 million units in 2025.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "1.5"
+        ],
+        "correct": true
+      },
+      {
+        "id": "g20",
+        "label": "hallucinated",
+        "source": "The startup raised $640 million in its Series D round.",
+        "claim": "The startup raised $460 million in its Series D round.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "460"
+        ],
+        "correct": true
+      },
+      {
+        "id": "p01",
+        "label": "grounded",
+        "probe": "unit conversion",
+        "source": "Voltaic reported data-center revenue of $18.4 billion for fiscal 2025.",
+        "claim": "Voltaic's data-center revenue was $18,400 million.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "18400"
+        ],
+        "correct": false
+      },
+      {
+        "id": "p02",
+        "label": "grounded",
+        "probe": "rounding",
+        "source": "The AI accelerator market was valued at $431.67 billion.",
+        "claim": "The market is worth about $431.7 billion.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "431.7"
+        ],
+        "correct": false
+      },
+      {
+        "id": "p03",
+        "label": "hallucinated",
+        "probe": "misattributed figure",
+        "source": "AMD's data-center revenue was $5.4 billion, while NVIDIA's was $30 billion.",
+        "claim": "NVIDIA's data-center revenue was $5.4 billion.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": false
+      },
+      {
+        "id": "p04",
+        "label": "hallucinated",
+        "probe": "wrong period",
+        "source": "Revenue was $10.2 billion in fiscal 2024 and $18.4 billion in fiscal 2025.",
+        "claim": "Revenue was $10.2 billion in fiscal 2025.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": false
+      },
+      {
+        "id": "p05",
+        "label": "hallucinated",
+        "probe": "single-digit figure",
+        "source": "The company operates three fabs in Asia.",
+        "claim": "The company operates 7 fabs in Asia.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": false
+      },
+      {
+        "id": "p06",
+        "label": "grounded",
+        "probe": "number written as a word",
+        "source": "Analysts expect twelve new accelerator launches this year.",
+        "claim": "Analysts expect 12 new accelerator launches this year.",
+        "flagged": true,
+        "unmatched_numbers": [
+          "12"
+        ],
+        "correct": false
+      },
+      {
+        "id": "p07",
+        "label": "hallucinated",
+        "probe": "invented year",
+        "source": "The MI400 series is expected to launch next year.",
+        "claim": "The MI400 series launches in 2027.",
+        "flagged": false,
+        "unmatched_numbers": [],
+        "correct": false
+      }
+    ]
+  },
+  "metrics": {
+    "all": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 3,
+      "tn": 10,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    "core": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 0,
+      "tn": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "live_run_cases": {
+      "n": 6,
+      "correct": 6
+    },
+    "n": 22,
+    "n_core": 19,
+    "rows": [
+      {
+        "id": "m01",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Voltaic revenue growth",
+          "expression": "(18.4 - 10.2) / 10.2 * 100",
+          "unit": "%"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m02",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Market CAGR 2025-2030",
+          "expression": "((343 / 117) ** (1 / 5) - 1) * 100",
+          "unit": "%"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m03",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "AMD share of combined revenue",
+          "expression": "5.4 / (5.4 + 30) * 100",
+          "unit": "%"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m04",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "AMD vs NVIDIA memory capacity ratio",
+          "expression": "288 / 192",
+          "unit": "x"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m05",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Gross margin change",
+          "expression": "54 - 51",
+          "unit": "pp"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m06",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Revenue difference",
+          "expression": "30 - 5.4",
+          "unit": "billion USD"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m07",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Combined revenue",
+          "expression": "18.4 + 7.3",
+          "unit": "billion USD"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m08",
+        "label": "valid",
+        "origin": "live-run",
+        "metric": {
+          "label": "AMD vs NVIDIA: memory_capacity ratio",
+          "expression": "256 / 128",
+          "unit": "x"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m09",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Shipment growth",
+          "expression": "(1.2 - 0.8) / 0.8 * 100",
+          "unit": "%"
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m10",
+        "label": "valid",
+        "origin": "hand",
+        "metric": {
+          "label": "Price per GB",
+          "expression": "30000 / 192",
+          "unit": ""
+        },
+        "flagged": false,
+        "reason": "",
+        "correct": true
+      },
+      {
+        "id": "m11",
+        "label": "invalid",
+        "origin": "live-run",
+        "metric": {
+          "label": "NVIDIA market share",
+          "expression": "80",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "not a calculation (a single copied number)",
+        "correct": true
+      },
+      {
+        "id": "m12",
+        "label": "invalid",
+        "origin": "live-run",
+        "metric": {
+          "label": "Revenue change",
+          "expression": "40 - 40",
+          "unit": "billion USD"
+        },
+        "flagged": true,
+        "reason": "combines fewer than two distinct source figures (e.g. 40 - 40)",
+        "correct": true
+      },
+      {
+        "id": "m13",
+        "label": "invalid",
+        "origin": "live-run",
+        "metric": {
+          "label": "Market CAGR",
+          "expression": "(432 - 117) / 117 * 100",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "labelled CAGR but has no exponent (that is total growth)",
+        "correct": true
+      },
+      {
+        "id": "m14",
+        "label": "invalid",
+        "origin": "live-run",
+        "metric": {
+          "label": "Memory ratio",
+          "expression": "256 / 128",
+          "unit": "GB"
+        },
+        "flagged": true,
+        "reason": "a division yields a ratio or percentage, but the unit is 'GB' (use %, x or none)",
+        "correct": true
+      },
+      {
+        "id": "m15",
+        "label": "invalid",
+        "origin": "live-run",
+        "metric": {
+          "label": "Market share",
+          "expression": "432 - 432 / (432 / 50)",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "divides a figure by itself",
+        "correct": true
+      },
+      {
+        "id": "m16",
+        "label": "invalid",
+        "origin": "hand",
+        "metric": {
+          "label": "Share",
+          "expression": "30 / 30",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "combines fewer than two distinct source figures (e.g. 40 - 40)",
+        "correct": true
+      },
+      {
+        "id": "m17",
+        "label": "invalid",
+        "origin": "hand",
+        "metric": {
+          "label": "Revenue growth",
+          "expression": "(18.4 - 10.2) / 10.2",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "unit is % but the expression never multiplies by 100",
+        "correct": true
+      },
+      {
+        "id": "m18",
+        "label": "invalid",
+        "origin": "hand",
+        "metric": {
+          "label": "Market size",
+          "expression": "117 * 1",
+          "unit": "billion USD"
+        },
+        "flagged": true,
+        "reason": "combines fewer than two distinct source figures (e.g. 40 - 40)",
+        "correct": true
+      },
+      {
+        "id": "m19",
+        "label": "invalid",
+        "origin": "hand",
+        "metric": {
+          "label": "Share of market",
+          "expression": "5.4 / (5.4 / 30) * 100",
+          "unit": "%"
+        },
+        "flagged": true,
+        "reason": "divides a figure by itself",
+        "correct": true
+      },
+      {
+        "id": "p01",
+        "label": "invalid",
+        "origin": "probe",
+        "metric": {
+          "label": "AMD share of AI accelerator market",
+          "expression": "5.4 / (5.4 + 30) * 100",
+          "unit": "%"
+        },
+        "why": "two-company share mislabelled as whole-market share (semantic error)",
+        "flagged": false,
+        "reason": "",
+        "correct": false
+      },
+      {
+        "id": "p02",
+        "label": "invalid",
+        "origin": "probe",
+        "metric": {
+          "label": "Revenue growth",
+          "expression": "(10.2 - 18.4) / 18.4 * 100",
+          "unit": "%"
+        },
+        "why": "old and new values swapped",
+        "flagged": false,
+        "reason": "",
+        "correct": false
+      },
+      {
+        "id": "p03",
+        "label": "invalid",
+        "origin": "probe",
+        "metric": {
+          "label": "Revenue difference",
+          "expression": "30 - 288",
+          "unit": "billion USD"
+        },
+        "why": "subtracts GB from USD (unit mix-up)",
+        "flagged": false,
+        "reason": "",
+        "correct": false
+      }
+    ]
+  }
+}

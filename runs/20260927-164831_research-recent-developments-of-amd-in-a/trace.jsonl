@@ -1,0 +1,89 @@
+{"ts": "2026-09-27T11:18:33.556+00:00", "tag": "AGENT", "message": "LLM health check: Ollama OK at http://localhost:11434; model 'qwen3:8b' is installed"}
+{"ts": "2026-09-27T11:18:34.704+00:00", "tag": "AGENT", "message": "Goal received: \"Research recent developments of AMD in AI accelerators\""}
+{"ts": "2026-09-27T11:18:34.705+00:00", "tag": "AGENT", "message": "mode=live | llm=ollama:qwen3:8b | search=web_search[tavily]"}
+{"ts": "2026-09-27T11:18:34.706+00:00", "tag": "FAULT", "message": "Deliberate failure armed: web_search -> 'malformed' for the next 1 call(s) (validator is not told)"}
+{"ts": "2026-09-27T11:18:34.706+00:00", "tag": "FAULT", "message": "Deliberate failure armed: url_fetcher -> 'timeout' for the next 2 call(s) (validator is not told)"}
+{"ts": "2026-09-27T11:20:19.565+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 104.9s (1440 chars) - You are the planning module of a competitive-intelligence ag"}
+{"ts": "2026-09-27T11:20:19.569+00:00", "tag": "PLAN", "message": "6 tasks generated; executing sequentially"}
+{"ts": "2026-09-27T11:20:19.569+00:00", "tag": "TASK 1", "message": "Search for recent news on AMD's AI accelerators", "task_id": 1}
+{"ts": "2026-09-27T11:20:19.569+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerators recent developments 2026\" (attempt 1)", "task_id": 1, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:19.569+00:00", "tag": "ERROR", "message": "invalid tool response: missing \"results\" [malformed_response]", "task_id": 1, "tool": "web_search", "duration_ms": 0.0, "error_type": "malformed_response"}
+{"ts": "2026-09-27T11:20:19.570+00:00", "tag": "RECOVERY", "message": "Validation failed. Retry attempt 1/1 in 0.5s...", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T11:20:20.070+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerators recent developments 2026\" (attempt 2)", "task_id": 1, "tool": "web_search", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-27T11:20:22.899+00:00", "tag": "VALIDATION", "message": "passed in 2828 ms", "task_id": 1, "tool": "web_search", "duration_ms": 2827.7}
+{"ts": "2026-09-27T11:20:22.899+00:00", "tag": "RECOVERY", "message": "Recovered via retry (attempt 2/2)", "task_id": 1, "tool": "web_search"}
+{"ts": "2026-09-27T11:20:22.900+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 1, "results": 5}
+{"ts": "2026-09-27T11:20:22.900+00:00", "tag": "RESULT", "message": "  - AMD's next-generation AI chips set to power 2026 data ... | https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-generation-ai-chips-set-to-power-2026-data-center-growth", "task_id": 1}
+{"ts": "2026-09-27T11:20:22.900+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Top News On AI Chips, CPUs, Robotics | https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics", "task_id": 1}
+{"ts": "2026-09-27T11:20:22.901+00:00", "tag": "RESULT", "message": "  - 7 Takeaways from AMD Advancing AI 2026 to Guide Your 2027 Infrastructure Plan | https://www.amd.com/en/solutions/data-center/insights/7-takeaways-from-amd-advancing-ai-2026.html", "task_id": 1}
+{"ts": "2026-09-27T11:20:22.901+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026: Helios Rack Hits $5.25M - Tech Insider | https://tech-insider.org/amd-advancing-ai-2026", "task_id": 1}
+{"ts": "2026-09-27T11:20:22.901+00:00", "tag": "RESULT", "message": "  - AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 1}
+{"ts": "2026-09-27T11:20:22.901+00:00", "tag": "TASK 1", "message": "COMPLETED_WITH_RECOVERY - 5 results via retry", "task_id": 1, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T11:20:22.902+00:00", "tag": "TASK 2", "message": "Search for AMD's AI accelerator product launches", "task_id": 2}
+{"ts": "2026-09-27T11:20:22.902+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerator product launches 2026\" (attempt 1)", "task_id": 2, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:24.890+00:00", "tag": "VALIDATION", "message": "passed in 1987 ms", "task_id": 2, "tool": "web_search", "duration_ms": 1986.8}
+{"ts": "2026-09-27T11:20:24.891+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 2, "results": 5}
+{"ts": "2026-09-27T11:20:24.891+00:00", "tag": "RESULT", "message": "  - AMD Gives Consumers and Businesses More AI PC Options with Expanded Ryzen AI 400 | https://www.amd.com/en/newsroom/press-releases/2026-3-2-amd-gives-consumers-and-businesses-more-ai-pc-opti.html", "task_id": 2}
+{"ts": "2026-09-27T11:20:24.891+00:00", "tag": "RESULT", "message": "  - AMD unveils AI accelerators and laptop chips at CES 2026 | https://the-decoder.com/amd-unveils-ai-accelerators-and-laptop-chips-at-ces-2026", "task_id": 2}
+{"ts": "2026-09-27T11:20:24.891+00:00", "tag": "RESULT", "message": "  - AMD Delivers Full-Stack Compute for the Agentic AI Era | https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era", "task_id": 2}
+{"ts": "2026-09-27T11:20:24.891+00:00", "tag": "RESULT", "message": "  - AMD Delivers Full-Stack Compute for the Agentic AI Era | https://newsroom.amd.com/news/aai-2026-full-stack-compute-agentic-ai", "task_id": 2}
+{"ts": "2026-09-27T11:20:24.892+00:00", "tag": "RESULT", "message": "  - AMD Expands AI Leadership Across Client, Graphics, and Software with New Ryzen,  | https://www.amd.com/en/newsroom/press-releases/2026-1-5-amd-expands-ai-leadership-across-client-graphics-.html", "task_id": 2}
+{"ts": "2026-09-27T11:20:24.892+00:00", "tag": "TASK 2", "message": "COMPLETED - 5 results via first_try", "task_id": 2, "status": "completed"}
+{"ts": "2026-09-27T11:20:24.892+00:00", "tag": "TASK 3", "message": "Search for AMD's AI accelerator partnerships and collaborations", "task_id": 3}
+{"ts": "2026-09-27T11:20:24.893+00:00", "tag": "TOOL", "message": "web_search[tavily] query=\"AMD AI accelerator partnerships 2026\" (attempt 1)", "task_id": 3, "tool": "web_search", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:27.657+00:00", "tag": "VALIDATION", "message": "passed in 2764 ms", "task_id": 3, "tool": "web_search", "duration_ms": 2764.3}
+{"ts": "2026-09-27T11:20:27.659+00:00", "tag": "RESULT", "message": "5 valid results (provider=tavily)", "task_id": 3, "results": 5}
+{"ts": "2026-09-27T11:20:27.660+00:00", "tag": "RESULT", "message": "  - Advancing AI 2026: AMD Begins & Ends the Show with Confidence | https://www.abiresearch.com/blog/amd-ai-strategy-advancing-day-2026", "task_id": 3}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "RESULT", "message": "  - What we know about the upcoming Advance AI Event | https://www.reddit.com/r/AMD_Stock/comments/1v0e2xb/what_we_know_about_the_upcoming_advance_ai_event", "task_id": 3}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "RESULT", "message": "  - Oracle and AMD Expand Partnership to Help Customers ... | https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14", "task_id": 3}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "RESULT", "message": "  - AMD Advancing AI 2026 | San Francisco, July 22-23 | https://www.amd.com/en/corporate/events/advancing-ai.html", "task_id": 3}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "RESULT", "message": "  - Advancing AI 2026 Replay | Build What's Next with @AMD | https://www.youtube.com/watch?v=8B_Gese-bdI", "task_id": 3}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "TASK 3", "message": "COMPLETED - 5 results via first_try", "task_id": 3, "status": "completed"}
+{"ts": "2026-09-27T11:20:27.661+00:00", "tag": "TASK 4", "message": "Fetch the most relevant sources", "task_id": 4}
+{"ts": "2026-09-27T11:20:27.664+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:27.665+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.1, "error_type": "timeout"}
+{"ts": "2026-09-27T11:20:27.665+00:00", "tag": "RECOVERY", "message": "Tool call failed. Retry attempt 1/1 in 0.5s...", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:20:28.166+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/03/amd-s-next-...\" (attempt 2)", "task_id": 4, "tool": "url_fetcher", "attempt": 2, "role": "retry"}
+{"ts": "2026-09-27T11:20:28.166+00:00", "tag": "ERROR", "message": "request timed out (ReadTimeout) [timeout]", "task_id": 4, "tool": "url_fetcher", "duration_ms": 0.0, "error_type": "timeout"}
+{"ts": "2026-09-27T11:20:28.168+00:00", "tag": "RECOVERY", "message": "Giving up after 2 attempt(s): request timed out (ReadTimeout)", "task_id": 4, "tool": "url_fetcher"}
+{"ts": "2026-09-27T11:20:28.168+00:00", "tag": "RECOVERY", "message": "Degraded gracefully: using search snippet for S1 instead of full page", "task_id": 4}
+{"ts": "2026-09-27T11:20:28.168+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.amd.com/en/newsroom/press-releases/2026-3-2-amd-gives-consumers-and-businesses...\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:29.051+00:00", "tag": "VALIDATION", "message": "passed in 883 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 882.8}
+{"ts": "2026-09-27T11:20:29.051+00:00", "tag": "RESULT", "message": "S2: 18149 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:20:29.051+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.abiresearch.com/blog/amd-ai-strategy-advancing-day-2026\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:30.468+00:00", "tag": "VALIDATION", "message": "passed in 1419 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 1419.0}
+{"ts": "2026-09-27T11:20:30.471+00:00", "tag": "RESULT", "message": "S3: 15031 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:20:30.472+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://www.crn.com/news/ai/2026/amd-advancing-ai-2026-top-news-on-ai-chips-cpus-robotics\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:30.635+00:00", "tag": "VALIDATION", "message": "passed in 163 ms (warnings: 1)", "task_id": 4, "tool": "url_fetcher", "duration_ms": 162.6}
+{"ts": "2026-09-27T11:20:30.635+00:00", "tag": "RESULT", "message": "S4: 14106 chars extracted (truncated)", "task_id": 4}
+{"ts": "2026-09-27T11:20:30.635+00:00", "tag": "TOOL", "message": "url_fetcher url=\"https://the-decoder.com/amd-unveils-ai-accelerators-and-laptop-chips-at-ces-2026\" (attempt 1)", "task_id": 4, "tool": "url_fetcher", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:20:32.939+00:00", "tag": "VALIDATION", "message": "passed in 2300 ms", "task_id": 4, "tool": "url_fetcher", "duration_ms": 2300.0}
+{"ts": "2026-09-27T11:20:32.939+00:00", "tag": "RESULT", "message": "S5: 3815 chars extracted", "task_id": 4}
+{"ts": "2026-09-27T11:20:32.940+00:00", "tag": "TASK 4", "message": "COMPLETED_WITH_RECOVERY - 4 full pages, 1 snippet fallbacks, 0 skipped", "task_id": 4, "status": "completed_with_recovery"}
+{"ts": "2026-09-27T11:20:32.940+00:00", "tag": "TASK 5", "message": "Compute key metrics from the sources", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.428+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 111.5s (1059 chars) - You extract comparable quantitative metrics for a competitiv"}
+{"ts": "2026-09-27T11:22:24.431+00:00", "tag": "VALIDATION", "message": "dropped metric 'AI performance increase from MI300X to MI500 series': combines fewer than two distinct source figures (e.g. 40 - 40)", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.431+00:00", "tag": "TOOL", "message": "calculator expression=\"12.8 - 12.8 / (12.8 / 40)\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:22:24.431+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T11:22:24.432+00:00", "tag": "RESULT", "message": "Year-on-year growth in data-center server revenue = -27.20billion USD", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.432+00:00", "tag": "TOOL", "message": "calculator expression=\"28.7 - 28.7 / (28.7 / 73)\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:22:24.432+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.0}
+{"ts": "2026-09-27T11:22:24.432+00:00", "tag": "RESULT", "message": "Total data-center revenue growth in 2026 = -44.30billion USD", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.432+00:00", "tag": "TOOL", "message": "calculator expression=\"432 - 432 / (432 / 50)\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:22:24.433+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T11:22:24.434+00:00", "tag": "RESULT", "message": "Increase in HBM4 memory capacity for MI455X = 382.00GB", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.434+00:00", "tag": "TOOL", "message": "calculator expression=\"19.6 - 19.6 / (19.6 / 50)\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:22:24.434+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T11:22:24.434+00:00", "tag": "RESULT", "message": "Memory bandwidth increase for MI455X = -30.40TB/s", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.435+00:00", "tag": "TOOL", "message": "calculator expression=\"432 / (432 / 50) - 100\" (attempt 1)", "task_id": 5, "tool": "calculator", "attempt": 1, "role": "primary"}
+{"ts": "2026-09-27T11:22:24.435+00:00", "tag": "VALIDATION", "message": "passed in 0 ms", "task_id": 5, "tool": "calculator", "duration_ms": 0.1}
+{"ts": "2026-09-27T11:22:24.435+00:00", "tag": "RESULT", "message": "Percentage increase in HBM4 memory capacity for MI455X = -50.00%", "task_id": 5}
+{"ts": "2026-09-27T11:22:24.435+00:00", "tag": "TASK 5", "message": "COMPLETED - 5/5 metrics computed", "task_id": 5, "status": "completed"}
+{"ts": "2026-09-27T11:22:24.436+00:00", "tag": "TASK 6", "message": "Write the report on AMD's recent developments in AI accelerators", "task_id": 6}
+{"ts": "2026-09-27T11:25:32.215+00:00", "tag": "LLM", "message": "ollama:qwen3:8b answered in 187.8s (1929 chars) - You are the reporting module of a competitive-intelligence a"}
+{"ts": "2026-09-27T11:25:32.218+00:00", "tag": "VALIDATION", "message": "'fact' relabelled as inference - figure(s) ['27.2'] not in cited source(s): AMD's data-center revenue is expected to decline by 27.2 bil", "task_id": 6}
+{"ts": "2026-09-27T11:25:32.219+00:00", "tag": "VALIDATION", "message": "'fact' relabelled as inference - figure(s) ['30.40'] not in cited source(s): The MI455X's memory bandwidth is reported to decrease by 30.", "task_id": 6}
+{"ts": "2026-09-27T11:25:32.219+00:00", "tag": "VALIDATION", "message": "'fact' relabelled as inference - figure(s) ['44.3'] not in cited source(s): Total data-center revenue is expected to decline by 44.3 bil", "task_id": 6}
+{"ts": "2026-09-27T11:25:32.220+00:00", "tag": "TASK 6", "message": "COMPLETED - llm: 1 competitors, 3 developments, 3 signals, 3 risks", "task_id": 6, "status": "completed"}
+{"ts": "2026-09-27T11:25:32.220+00:00", "tag": "RESULT", "message": "status=completed | tasks 6/6 | tool calls=15 | failures=3 | recoveries=2 | sources=5"}
+{"ts": "2026-09-27T11:25:32.226+00:00", "tag": "RESULT", "message": "Saved E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-164831_research-recent-developments-of-amd-in-a\\report.json, E:\\Assignment\\competitive-intelligence-agent\\runs\\20260927-164831_research-recent-developments-of-amd-in-a\\report.md"}
